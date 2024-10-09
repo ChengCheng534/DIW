@@ -97,23 +97,28 @@ main {
     td {
         background-color: #ecf0f1;
     }
-    tr:nth-child(even) td {
-        background-color: #dfe6e9;
-    }
 }
 
-/*Galeria*/
+/*Css Galeria*/
 #foto{
     .galeria {
         display: flex;
         justify-content: space-around;
-        width: 100%;
+        width: 95%;
+        padding: 10px;
     }
     figure {
+        padding: 15px;
+        margin: 10px;
+        background-color: #00B0F0;
+        width: 50em;
+        height: 15em;
         text-align: center;
+        border: solid #F4F000;
+        border-radius: 10px;
     }
     figure img {
-        width: 200px;
+        width: 280px;
         height: 200px;
         object-fit: cover;
     }
@@ -122,33 +127,47 @@ main {
     }
 }
 
-/*Pagina sobre nosotro*/
+/*Css sobre nosotro*/
+#sobreNosotro{
 main {
     padding: 10px;
 }
-.sobre-nosotros {
-    margin: 10px 0;
+.nosotros {
+    margin: 10px;
     padding: 20px;
     background-color: white;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
-.sobre-nosotros h2 {
+h2 {
     text-align: center;
     margin-bottom: 20px;
 }
-.sobre-nosotros img {
-    max-width: 40%; /* Ajusta el tamaño de la imagen */
+img {
+    width: 500px; 
     height: auto;
-    display: block; /* Centra la imagen */
-    margin: 0 auto; /* Centra horizontalmente */
+    display: block; 
+    margin: 0 auto; 
 }
-.section {
-    margin: 20px 0;
 }
-.section h3 {
-    margin-top: 20px;
-    color: #2c3e50;
+
+/*CSS Contacto*/
+#contacto{
+    div{
+        padding: 1px;
+        margin: 10px;
+        background-color: #38E1F0;
+        border-radius: 10px;
+        border:solid #2c3e50;
+    }
+    figure{
+        text-align: center;
+        width: 1100px;
+    }
+    img{
+        width: 30px;;
+    }
+
 }
 
 /*Piel del página*/
