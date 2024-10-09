@@ -1,0 +1,63 @@
+#titulo{
+    color: #198484;
+}
+#subtitulo{
+    color: blue;
+}
+strong{
+    color: red;
+}
+span.destacado{
+    color: #FCA62B;
+}
+span.especial{
+    color: #820081;
+}
+a{
+    color: red;
+}
+em {
+    color: blue;
+}
+caption{
+    color: blue;
+}
+div{
+    color: green;
+}
+#especial{
+    color: violet;
+}
+#adicional a{
+    color: darkgreen;
+}
+
+table {
+    width: 60%;
+    border-collapse: collapse;
+}
+thead th {
+    border: 1px solid #ddd;
+    padding: 8px;
+
+    color: #FCA62B;
+}
+tfoot th {
+    border: 1px solid #ddd;
+    padding: 8px;
+    color: red;
+}
+tbody th {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+tbody td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+    color: green;
+}
+th.especial{
+    color: #FCA62B;
+}

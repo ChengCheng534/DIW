@@ -1,0 +1,52 @@
+nav{
+    text-align: center;
+}
+nav a{
+    color: red;
+}
+nav a:hover{
+    background-color: yellow;
+}
+div:hover{
+    width: 100px;
+    height: 100px;
+    background-color: orange;
+}
+
+.Transition{
+    width: 150px;
+    height: 70px;
+    background-color: aliceblue;
+    margin: 5px;
+}
+.Ease{
+    
+    width: 150px;
+    height: 70px;
+    background-color: aliceblue;
+    margin: 5px;
+}
+.Linear{
+    width: 150px;
+    height: 70px;
+    background-color: aliceblue;
+    margin: 5px;
+}
+.Ease-in{
+    width: 150px;
+    height: 70px;
+    background-color: aliceblue;
+    margin: 5px;
+}
+.Ease-ant{
+    width: 150px;
+    height: 70px;
+    background-color: aliceblue;
+    margin: 5px;
+}
+.Ease-in-ant{
+    width: 150px;
+    height: 70px;
+    background-color: aliceblue;
+    margin: 5px;
+}
