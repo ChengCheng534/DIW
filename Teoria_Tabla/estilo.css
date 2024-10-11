@@ -1,0 +1,33 @@
+#Ejercicio1{
+    table,thead, tbody, tr, th, td{
+        border: 1px solid;
+        border-collapse: collapse;
+        text-align: center;
+    }
+    
+    thead{
+        background-image: url("Imagenes/fondo_gris.gif");
+    }
+    
+    tbody th{
+        text-align: left;
+        background-color: rgb(238, 227, 227);
+    }
+    .Euro, .Libra td{
+        background-color: rgb(238, 249, 111);
+    }
+    
+    .styled-table tbody tr:nth-child(odd){
+        background-color: #a64040;
+    }
+}
+
+#Ejercicio2{
+    table,thead, tbody, tr, th, td{
+        text-align: center;
+    }
+    th{
+        width: 10em;
+        background-color: rgb(45, 107, 71);
+    }
+}
