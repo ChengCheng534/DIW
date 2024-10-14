@@ -1,0 +1,86 @@
+/*Ejercicio 1*/
+#tipo1{
+    ul{
+        list-style-type: circle;
+    }
+}
+
+#tipo2{
+    ul{
+        list-style-type: square;
+    }
+}
+
+#tipo3{
+    ul{
+        list-style-type: decimal;
+    }
+}
+
+/*Ejercicio 2*/
+#imagen1{
+    ul{
+        list-style-image: url(https://media.giphy.com/media/tBik70kZOJKOk/giphy.gif);
+    }
+}
+#imagen2{
+    ul{
+        list-style-image: url(https://i.pinimg.com/originals/7f/33/5f/7f335f6a84c932db2e63668b20edafef.gif);
+        padding: 0em;
+        margin: 0;
+    }
+    ul li {
+        margin: 10px 0;
+        font-size: 10px;
+    }   
+}
+.imagen{
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*Ejericicio 3*/
+.orden1{
+    list-style-position: inside;    
+}
+.orden2{
+    list-style-position: outside;
+
+}
+
+/*Ejercicio 4*/
+/* Lista con marcador cuadrado e inside */
+.square-inside {
+    list-style: square inside;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+/* Lista con marcador circular y outside */
+.circle-outside {
+    list-style: circle outside;
+    font-size: 18px;
+}
+
+/*Ejercicio 5*/
+.icono {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    font-size: 18px;
+}
+
+/* Usar el pseudo-elemento ::before para agregar emoticonos */
+.icono li::before {
+    content: "😀";  /* Emoticono que desees usar */
+    margin-right: 10px; /* Espacio entre el emoticono y el texto */
+    font-size: 24px; /* Tamaño del emoticono */
+}
+
+/* Opcional: agregar espacio entre los elementos de la lista */
+.icono li {
+    margin-bottom: 10px;
+}
