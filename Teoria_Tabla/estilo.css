@@ -1,3 +1,5 @@
+
+
 #Ejercicio1{
     table,thead, tbody, tr, th, td{
         border: 1px solid;
@@ -23,11 +25,14 @@
 }
 
 #Ejercicio2{
+    body {
+        font-family: Arial, sans-serif;
+    }
     table,thead, tbody, tr, th, td{
         text-align: center;
     }
     th{
         width: 10em;
-        background-color: rgb(45, 107, 71);
+        background-color: rgb(81, 195, 129);
     }
 }
