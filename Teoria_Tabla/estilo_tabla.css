@@ -34,7 +34,7 @@
     
     thead, tbody th {
         width: 10em;
-        background-color: #2a9d8f;
+        background-color: #009688;
         color: white;
         padding: 10px;
     }
@@ -45,7 +45,7 @@
     }
     
     tbody tr:nth-child(even) {
-        background-color: #f3f3f3;
+        background-color: #f2f2f2;
     }
     
     tbody tr.highlight {
@@ -53,12 +53,18 @@
     }
     
     tbody tr:hover {
-        background-color: #eaeaea;
+        background-color: #c7e2e0;
     }
     
     th, td {
         text-align: center;
         padding: 10px;
     }    
+}
+
+#Ejercicio3{
+    table{
+        background-color: #009688;
+    }
 }
 
