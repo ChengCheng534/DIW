@@ -26,16 +26,16 @@ body {
     left: 50%;
     transform: translateX(-150%); 
 }
-.logo img {
+.logo-img {
     width: 40px;
     height: 40px;
+    margin: 100px;
     margin-right: 10px;
 }
-
-.logo h1{
-    font-family: 'Billabong', cursive;
-    font-size: 24px;
-    color: #262626;
+.logo-texto{
+    width: 150px;
+    height: 60px;
+    margin-right: 10px;
 }
 .busqueda{
     display: flex;
@@ -51,25 +51,82 @@ body {
     border-radius: 5px;
 }
 
+/*CSS de contenido de pagina*/
 .contenido {
     display: flex;
-    width: 90%;
-    max-width: 1000px;
+    width: 100%;
+    max-width: 700px;
     margin: 40px auto;
     background-color: white;
     border: 1px solid #dbdbdb;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
 }
-.portado{
-    width: 100px;
-    flex: 2;
-    border-right: 1px solid #dbdbdb;
-}
-
 .contenido img {
     width: 100%;
     height: auto;
 }
-.post {
-    padding: 20px;
+.posicion {
+    padding: 30px;
+    margin-bottom: 50px;
+
+}
+.usuario{
+    width: 100%;
+    margin-bottom: 50px;
+}
+.usuario h4{
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+.usuario span{
+    font-size: 12px;
+    color: black;
+} 
+
+.comentario {
+    margin-bottom: 20px;
+}
+.comentario h4 {
+    font-weight: bold;
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+.comentario p {
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+.comentario span {
+    font-size: 12px;
+    color: #999;
+}
+.añadir{
+    align-items: center;
+    width: 40px;
+    height: 70px;
+    margin: 0 auto;
+}
+.icono1{
+    width: 20px;
+    align-items: center;
+    position: absolute;
+}
+.icono2{
+    width: 20px;
+    align-items: center;
+    position: absolute;
+    left: 74%;
+}
+.icono3{
+    width: 20px;
+    align-items: center;
+    position: absolute;
+    left: 80%;
+}
+.icono4{
+    width: 20px;
+    align-items: center;
+    position: absolute;
+    left: 90%;
 }

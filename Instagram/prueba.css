@@ -22,10 +22,7 @@ body {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-.image-section {
-    flex: 1;
-    border-right: 1px solid #dbdbdb;
-}
+
 
 .container img{
     width: 100%;
