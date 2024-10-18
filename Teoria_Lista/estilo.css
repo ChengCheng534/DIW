@@ -20,7 +20,7 @@
 /*Ejercicio 2*/
 #imagen1{
     ul{
-        list-style-image: url(https://media.giphy.com/media/tBik70kZOJKOk/giphy.gif);
+        list-style-image: url(../Instagram/Imagenes/avatar1.png);
     }
 }
 #imagen2{
@@ -32,6 +32,7 @@
     ul li {
         margin: 10px 0;
         font-size: 10px;
+        padding-left: 0px;
     }   
 }
 .imagen{
