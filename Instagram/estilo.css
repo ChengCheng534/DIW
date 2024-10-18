@@ -70,22 +70,32 @@ body {
 }
 .usuario{
     margin-bottom: 20px;
+    align-items: center;
+    border-bottom: #8e8e8e solid 1px;
+    
 }
 .usuario h4 {
     font-size: 14px;
     font-weight: bold;
 }
 .usuario span {
-    display: block;
     font-size: 12px;
 }
-
-.comentario h4 {
+.comentario{
+    border-bottom: #8e8e8e solid 1px;
+}
+.publicar{
+    display: block;
+    margin-bottom: 20px;
+    align-items: center;
+    
+}
+.publicar h4 {
     font-size: 14px;
     font-weight: bold;
     display: inline;
 }
-.comentario p {
+.publicar p {
     font-size: 14px;
     display: inline;
 }
@@ -93,7 +103,7 @@ body {
     display: block;
     font-size: 12px;
     color: #8e8e8e;
-    margin-top: 5px;
+    margin-top: 10px;
 }
 
 .añadir {
@@ -110,6 +120,7 @@ body {
 .iconos {
     justify-content: space-around;
     margin: 50px auto;
+    border-bottom: #8e8e8e solid 1px;
 }
 .iconos p{
     font-size: 14px;
