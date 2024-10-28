@@ -1,0 +1,72 @@
+#Menu{
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    main {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #f4f4f4;
+    }
+    
+    .navegacion {
+        width: 100%;
+        background-color: #333;
+    }
+    
+    ul.pagina {
+        display: flex;
+        list-style: none;
+        justify-content: center;
+        background-color:  #222;
+    }
+    
+    ul.pagina > li {
+        position: relative;
+    }
+    
+    ul.pagina > li > a {
+        display: block;
+        padding: 15px 20px;
+        color: white;
+        text-decoration: none;
+        text-transform: uppercase;
+        font-size: 16px;
+    }
+    
+    ul.pagina > li > a:hover {
+        background-color: #575757;
+    }
+    
+    ul.subpagina {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        display: none; /* Oculta el submenu inicialmente */
+        background-color: #333;
+        list-style: none;
+    }
+    
+    ul.subpagina li a {
+        display: block;
+        padding: 10px 20px;
+        color: white;
+        text-decoration: none;
+        text-transform: uppercase;
+    }
+    
+    ul.subpagina li a:hover {
+        background-color: #575757;
+    }
+    
+    /* Muestra el submenu al pasar el mouse */
+    ul.pagina li:hover > ul.subpagina {
+        display: block;
+    }
+    
+    ul.pagina > li > a:hover + ul.subpagina {
+        display: block;
+    }
+}

@@ -6,7 +6,8 @@
     <title>Noche de Horror - Halloween Experience</title>
     <link rel="icon" href="Imagenes/favicon.png">
     <link href="https://fonts.googleapis.com/css2?family=Nosifer&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="estilo.css">
+    <link rel="stylesheet" href="EstiloPagina/estilo.css">
+    <link rel="stylesheet" href="EstiloPagina/navegacion.css">
 </head>
 <body>
 
@@ -16,19 +17,35 @@
     </header>
 
     <!-- Navegación -->
-    <nav>
-        <ul>
-            <li><a href="#presentacion">Presentación</a></li>
-            <li><a href="#servicios">Servicios</a></li>
-            <li><a href="#precios">Precios</a></li>
-            <li><a href="#galeria">Galería</a></li>
-            <li><a href="#reserva">Reserva</a></li>
-        </ul>
-    </nav>
+    <main id="Menu">
+        <div class="navegacion">
+            <ul class="pagina">
+                <li><a href="">Inicio</a>
+                    <ul class="subpagina">
+                        <li><a href="">Nuevos Eventos</a></li>
+                        <li><a href="">Precios</a></li>
+                        <li><a href="">Restrinciones de admisión</a></li>
+                        <li><a href="">Horario</a></li>
+
+                    </ul>
+                </li>
+                <li><a href="">Servicios</a>
+                    <ul class="subpagina">
+                        <li><a href="">Temas de escape</a></li>
+                        <li><a href="">Aquiler difraces</a></li>
+                        <li><a href="">Snacks y bebidas</a></li>
+                    </ul>
+                </li>
+                <li><a href="">Galería</a></li>
+                <li><a href="">Reserva</a></li>
+                <li><a href="">Contacto</a></li>
+            </ul>
+        </div>
+    </main>
 
     <!-- Presentación del Evento -->
-    <section id="presentacion">
-        <h2>Presentación del Evento</h2>
+    <section id="Inicio">
+        <h2>Nuevos evento para Halloween</h2>
         <p>Vive la experiencia de Halloween más aterradora en nuestras instalaciones ubicadas en el centro de la ciudad. Prepárate para una noche de horror con efectos especiales, actores en vivo y sorpresas a cada paso.</p>
     </section>
 
@@ -125,9 +142,8 @@
     <!-- Footer -->
     <footer>
         <img src="Imagenes/favicon.png" alt="Logo del Club Deportivo Cheng">
-       <p>Autor: ChengCheng Yu</p>
+       <p>Jefe: ChengCheng Yu</p>
        <p>Correo electrónico: ChengChengYu@iescomercio.es</p> 
-       <p>&copy; 2024 Club Deportivo Cheng. Todos los derechos reservados.</p>
        <p>
            <a href="#terminos">Términos y Condiciones</a> | 
            <a href="#privacidad">Política de Privacidad</a>
