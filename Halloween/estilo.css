@@ -1,6 +1,6 @@
 /* Fuente Halloween */
 body {
-    background-image: url('../Imagenes/fondo.jpg');
+    background-image: url('Imagenes/fondo.jpg');
     font-family: Arial, sans-serif;
     background-color: #111;
     color: #f5f5f5;
@@ -10,7 +10,7 @@ body {
 
 /*Estilo de encabezado*/
 header {
-    background-image: url('../Imagenes/fondoCabecera.png');
+    background-image: url('Imagenes/fondoCabecera.png');
     background-position: 50% 50%;
     text-align: center;
     padding: 30px;
@@ -93,6 +93,17 @@ header {
     }
 }
 
+/*Presentación*/
+#presentacion{
+    div {
+        align-items: flex-start;
+        margin-bottom: 20px;
+        background-color: #222;
+        padding: 15px;
+        border-radius: 8px;
+    }
+}
+
 /*Sección de Eventos */
 section {
     padding: 20px;
@@ -106,7 +117,7 @@ article {
     margin-bottom: 20px;
 }
 
-article h3 {
+h3 {
     color: #ff3333;
     font-size: 1.5em;
     font-family: 'Nosifer', cursive;
@@ -178,35 +189,106 @@ p {
 }
 
 /*Restricciones de Admisión*/
-#Restricciones-de-admision{
-    ul {
-        list-style-type: none;
-        padding: 0;
-    }  
-    li {
+ul {
+    list-style-type: none;
+    padding: 0;
+}  
+li {
+    background-color: #222;
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+
+/*Horario*/
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+th, td {
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #444;
+}
+th {
+    background-color: #222;
+    color: #ff3333;
+}
+
+/*Instalacion*/
+.Instalacion{
+    display: flex;
+    flex-direction: column;
+}
+img {
+    width: 50%;
+    height: auto;
+    margin: 10px 0;
+}
+.img-left {
+    align-self: flex-start;
+    text-align: left;
+}
+.img-right {
+    align-self: flex-end;
+    text-align: right;
+}
+
+/*Contacto*/
+#Contacto{
+    form {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        margin-top: 15px;
+    }
+    label {
+        font-weight: bold;
+        color: #f5f5f5;
+    }
+    input[type="text"], input[type="email"], textarea {
+        padding: 8px;
+        border: 1px solid #555;
+        border-radius: 4px;
         background-color: #222;
-        margin: 10px 0;
+        color: #f5f5f5;
+    }
+    button[type="submit"] {
         padding: 10px;
-        border-radius: 5px;
+        background-color: #ff3333;
+        color: #f5f5f5;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+    button[type="submit"]:hover {
+        background-color: #cc0000;
     }
 } 
 
-/*Horario*/
-#Horario{
-    table {
-        width: 100%;
-        border-collapse: collapse;
+/*Formulario*/
+#Formulario{
+    form {
+        display: flex;
+        flex-direction: column;
     }
-    th, td {
+    form label, form input, form select, form textarea, form button {
+        margin-bottom: 10px;
+        font-size: 1em;
+    }
+    form input, form select, form textarea {
+        padding: 5px;
+        border-radius: 4px;
+        border: none;
+    }
+    form button {
         padding: 10px;
-        text-align: center;
-        border: 1px solid #444;
+        color: #fff;
+        background-color: #ff3333;
+        cursor: pointer;
     }
-    th {
-        background-color: #222;
-        color: #ff3333;
-    }
-} 
+}
 
 /*Estilo de pie de pagina*/
 footer {
@@ -218,7 +300,6 @@ footer img {
     max-width: 80px;
     margin-bottom: 5px;
 }
-footer a {
-    color: #ff3333;
-    text-decoration: none;
+footer a{
+    color: #cc0000;
 }
