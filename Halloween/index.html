@@ -3,151 +3,145 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Noche de Horror - Halloween Experience</title>
-    <link rel="icon" href="Imagenes/favicon.png">
+    <title>Escape Room - Halloween</title>
     <link href="https://fonts.googleapis.com/css2?family=Nosifer&display=swap" rel="stylesheet">
+    <link rel="icon" href="Imagenes/favicon.png">
     <link rel="stylesheet" href="EstiloPagina/estilo.css">
-    <link rel="stylesheet" href="EstiloPagina/navegacion.css">
 </head>
 <body>
 
     <!-- Cabecera -->
     <header>
-        <h1>Escape de room</h1>
+        <h1>Escape Room</h1>
     </header>
 
     <!-- Navegación -->
     <main id="Menu">
         <div class="navegacion">
             <ul class="pagina">
-                <li><a href="">Inicio</a>
+                <li><a href="index.html">Inicio</a>
                     <ul class="subpagina">
-                        <li><a href="">Nuevos Eventos</a></li>
-                        <li><a href="">Precios</a></li>
-                        <li><a href="">Restrinciones de admisión</a></li>
-                        <li><a href="">Horario</a></li>
-
+                        <li><a href="#Nuevos-Eventos">Nuevos Eventos</a></li>
+                        <li><a href="#Restricciones-de-admision">Restricciones de Admisión</a></li>
+                        <li><a href="#Horario">Horario</a></li>
                     </ul>
                 </li>
-                <li><a href="">Servicios</a>
+                <li><a href="Paginas/Servicios/index.html">Servicios</a>
                     <ul class="subpagina">
-                        <li><a href="">Temas de escape</a></li>
-                        <li><a href="">Aquiler difraces</a></li>
-                        <li><a href="">Snacks y bebidas</a></li>
+                        <li><a href="Paginas/Servicios/temas.html">Temas de Escape</a></li>
+                        <li><a href="Paginas/Servicios/disfraz.html">Alquiler de Disfraces</a></li>
+                        <li><a href="Paginas/Servicios/comida.html">Snacks y Bebidas</a></li>
                     </ul>
                 </li>
-                <li><a href="">Galería</a></li>
-                <li><a href="">Reserva</a></li>
-                <li><a href="">Contacto</a></li>
+                <li><a href="Paginas/Galeria/index.html">Galería</a></li>
+                <li><a href="Paginas/Reserva/index.html">Reserva</a></li>
+                <li><a href="Paginas/Contacto/index.html">Contacto</a></li>
             </ul>
         </div>
     </main>
 
-    <!-- Presentación del Evento -->
-    <section id="Inicio">
-        <h2>Nuevos evento para Halloween</h2>
-        <p>Vive la experiencia de Halloween más aterradora en nuestras instalaciones ubicadas en el centro de la ciudad. Prepárate para una noche de horror con efectos especiales, actores en vivo y sorpresas a cada paso.</p>
+    <section id="Nuevos-Eventos">
+        <h2>Nuevos Eventos de Halloween</h2>
+        <article>
+            <img src="Imagenes/evento1.jpg" alt="Evento Noche de Fantasmas">
+            <div class="content">
+                <h3>Noche de Fantasmas</h3>
+                <p>Sumérgete en una aventura terrorífica en una mansión encantada. ¿Podrás escapar antes de que el reloj marque la medianoche? Este evento especial solo estará disponible en octubre.</p>
+                <p><strong>Fecha inicio:</strong> 31 de Octubre</p>
+                <p><strong>Duración:</strong> 1 hora</p>
+                <p><strong>Precio (20% Descuento para dia Halloween): </strong><s>20€</s> 16€/persona</p>
+                <p><strong>Niveles de Terror:</strong></p>
+            </div>
+        </article>
+
+        <article>
+            <img src="Imagenes/evento2.jpg" alt="Evento Ritual Oculto">
+            <div class="content">
+                <h3>El Ritual Oculto</h3>
+                <p>Enfréntate a un misterio oculto de brujas y hechizos antiguos. Solo para los más valientes que se atrevan a descubrir los secretos de la magia oscura.</p>
+                <p><strong>Fecha inicio:</strong> 31 de Octubre</p>
+                <p><strong>Duración:</strong> 1.5 horas</p>
+                <p><strong>Precio (20% Descuento para dia Halloween): </strong><s>25€</s> 20€/persona</p>
+                <p><strong>Niveles de Terror:</strong></p>
+            </div>
+        </article>
+
+        <article>
+            <img src="Imagenes/evento3.jpg" alt="Evento Escape en la Oscuridad">
+            <div class="content">
+                <h3>Escape en la Oscuridad</h3>
+                <p>Una experiencia completamente a oscuras en la que tus otros sentidos te ayudarán a escapar. ¿Te atreves a enfrentar tus miedos en la completa oscuridad?</p>
+                <p><strong>Fecha inicio:</strong> 31 de Octubre</p>
+                <p><strong>Duración: </strong>1 hora</p>
+                <p><strong>Precio (20% Descuento para dia Halloween): </strong><s>29€</s> 23.20€/persona</p>
+                <p><strong>Niveles de Terror:</strong></p>
+        </article>
+
+        
+    <aside id="Ofertas">
+        <h3>Próximos Eventos y Ofertas</h3>
+        <ul>
+            <li><strong>Oferta Halloween:</strong> 20% de descuento en reservas grupales.</li>
+            <li><strong>Escape Navideño:</strong> Disponible desde el 20 de diciembre.</li>
+            <li><strong>Taller de Misterios:</strong> Próximo 10 de enero.</li>
+            <li><strong>Reserva Anticipada:</strong> Descuento del 15% para reservas con 2 meses de antelación.</li>
+        </ul>
+    </aside>
+    <aside id="Nivel">
+        <h3>Nivel de terror:</h3>
+        <p>Básico: </p>
+        <p>Avanzado: </p>
+        <p>Extremo: </p>
+    </aside>
     </section>
 
-    <!-- Servicios -->
-    <section id="servicios">
-        <h2>Servicios Ofrecidos</h2>
+
+    <section id="Restricciones-de-admision">
+        <h2>Restricciones de Admisión</h2>
         <ul>
-            <li><strong>Niveles de Terror:</strong> Básico, Avanzado, Extremo</li>
-            <li><strong>Público:</strong> A partir de 18 años</li>
-            <li><strong>Servicios:</strong> Actores en vivo, áreas temáticas, snacks y bebidas</li>
-            <li><strong>Ubicación:</strong> Calle Oscura 13, Centro Ciudad</li>
+            <li><strong>Edad mínima:</strong> 12 años. Los menores de 16 años deben ir acompañados de un adulto.</li>
+            <li><strong>Salud:</strong> No se recomienda la participación de personas con problemas cardíacos, epilepsia o ansiedad extrema.</li>
+            <li><strong>Embarazo:</strong> Por la naturaleza de los efectos especiales y la intensidad del escape room, no se recomienda para mujeres embarazadas.</li>
+            <li><strong>Prohibido el acceso bajo los efectos del alcohol o sustancias.</strong> Nos reservamos el derecho de admisión.</li>
+            <li><strong>Condiciones de movilidad:</strong> Algunos de nuestros escenarios no están adaptados para personas con movilidad reducida. Consulta antes de reservar.</li>
         </ul>
     </section>
 
-    <!-- Opciones y Precios -->
-    <section id="precios">
-        <h2>Opciones y Precios</h2>
-        <ul>
-            <li>Entrada Individual: 20€</li>
-            <li>Entrada en Grupo (5 personas): 90€</li>
-        </ul>
+    <section id="Horario">
+        <h2>Horario</h2>
+        <table>
+            <tr>
+                <th>Día</th>
+                <th>Horario</th>
+            </tr>
+            <tr>
+                <td>Lunes a Viernes</td>
+                <td>17:00 - 22:00</td>
+            </tr>
+            <tr>
+                <td>Sábado</td>
+                <td>12:00 - 23:00</td>
+            </tr>
+            <tr>
+                <td>Domingo</td>
+                <td>12:00 - 20:00</td>
+            </tr>
+            <tr>
+                <td>Festivos</td>
+                <td>12:00 - 23:00</td>
+            </tr>
+        </table>
     </section>
 
-    <!-- Galería -->
-    <section id="galeria">
-        <h2>Galería</h2>
-        <div class="gallery">
-            <div class="img-left">
-                <img src="Imagenes/imagen1.png" alt="Evento Halloween 1">
-                <p>Opción 1</p>
-            </div>
-            <div class="img-right">
-                <img src="Imagenes/imagen2.png" alt="Evento Halloween 2">
-                <p>Opción 2</p>
-            </div>
-            <div class="img-left">
-                <img src="Imagenes/imagen3.png" alt="Evento Halloween 1">
-                <p>Opción 3</p>
-            </div>
-            <div class="img-right">
-                <img src="Imagenes/imagen4.jpg" alt="Evento Halloween 2">
-                <p>Opción 4</p>
-            </div>
-            <div class="img-left">
-                <img src="Imagenes/imagen5.jpg" alt="Evento Halloween 1">
-                <p>Opción 5</p>
-            </div>
-            <div class="img-right">
-                <img src="Imagenes/imagen6.jpg" alt="Evento Halloween 2">
-                <p>Opción 6</p>
-            </div>
-        </div>
-    </section>
-
-    <!-- Formulario de Reserva -->
-    <section id="reserva">
-        <h2>Reserva tu Experiencia</h2>
-        <form>
-            <label for="nombre">Nombre:</label>
-            <input type="text" id="nombre" name="nombre" required>
-
-            <label for="apellidos">Apellidos:</label>
-            <input type="text" id="apellidos" name="apellidos" required>
-
-            <label for="dni">DNI:</label>
-            <input type="text" id="dni" name="dni" required>
-
-            <label for="telefono">Teléfono:</label>
-            <input type="tel" id="telefono" name="telefono" required>
-
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
-
-            <label for="opcion">Elige una opción:</label>
-            <select id="opcion" name="opcion">
-                <option value="individual">Entrada Individual</option>
-                <option value="grupo">Entrada en Grupo</option>
-            </select>
-
-            <label for="personas">Número de Personas:</label>
-            <input type="number" id="personas" name="personas" min="1" required>
-
-            <label>¿Hay niños o personas con discapacidad?</label>
-            <input type="checkbox" id="ninos" name="ninos"> <label for="ninos">Sí</label>
-
-            <label for="comentarios">Peticiones adicionales:</label>
-            <textarea id="comentarios" name="comentarios"></textarea>
-
-            <button type="reset">Resetear</button>
-            <button type="button" onclick="alert('¡Reserva realizada con éxito!')">Reservar</button>
-        </form>
-    </section>
-
-    <!-- Footer -->
+    <!-- Pie de página -->
     <footer>
         <img src="Imagenes/favicon.png" alt="Logo del Club Deportivo Cheng">
-       <p>Jefe: ChengCheng Yu</p>
-       <p>Correo electrónico: ChengChengYu@iescomercio.es</p> 
-       <p>
-           <a href="#terminos">Términos y Condiciones</a> | 
-           <a href="#privacidad">Política de Privacidad</a>
-       </p>
-   </footer>
+        <p>Jefe: ChengCheng Yu</p>
+        <p>Correo electrónico: <a href="mailto:ChengChengYu@iescomercio.es">ChengChengYu@iescomercio.es</a></p>
+        <p>
+            <a href="#terminos">Términos y Condiciones</a> | 
+            <a href="#privacidad">Política de Privacidad</a>
+        </p>
+    </footer>
 </body>
 </html>

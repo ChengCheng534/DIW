@@ -1,0 +1,39 @@
+/* Estilos para el formulario de contacto */
+#Contacto form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+#Contacto label {
+    font-weight: bold;
+    color: #f5f5f5;
+}
+
+#Contacto input[type="text"],
+#Contacto input[type="email"],
+#Contacto textarea {
+    padding: 8px;
+    border: 1px solid #555;
+    border-radius: 4px;
+    background-color: #222;
+    color: #f5f5f5;
+}
+
+#Contacto button[type="submit"] {
+    padding: 10px;
+    background-color: #ff3333;
+    color: #f5f5f5;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#Contacto button[type="submit"]:hover {
+    background-color: #cc0000;
+}
+
+.mapa {
+    margin-top: 20px;
+}
