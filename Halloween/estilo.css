@@ -20,6 +20,26 @@ header {
     background-size: cover;
 }
 
+/*Esstilo de cuerpo*/
+section {
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 800px;
+    background-color: #333;
+    border-radius: 8px;
+}
+h3 {
+    color: #ff3333;
+    font-size: 1.5em;
+    font-family: 'Nosifer', cursive;
+}
+h2 {
+    text-align: center;
+    color: #ff3333;
+    font-size: 2em;
+    font-family: 'Nosifer', cursive;
+}
+
 /*Estilo de navegación*/
 #Menu{
     * {
@@ -94,7 +114,8 @@ header {
 }
 
 /*Presentación*/
-#presentacion{
+#Presentacion{
+    /*Estilo de contenido*/
     div {
         align-items: flex-start;
         margin-bottom: 20px;
@@ -102,39 +123,105 @@ header {
         padding: 15px;
         border-radius: 8px;
     }
-}
 
-/*Sección de Eventos */
-section {
-    padding: 20px;
-    margin: 20px auto;
-    max-width: 800px;
-    background-color: #333;
-    border-radius: 8px;
-}
+    /*EStilo de instalacion*/
 
-article {
-    margin-bottom: 20px;
-}
+    .instalacion {
+        align-items: center;
+    }
+    
+    .imagen-escenario {
+        max-width: 80%; 
+        height: auto; 
+        margin: 20px auto; 
+        display: block; 
+    }
+    
+    /*Barra lateral*/
+    .ofertas{
+        position: absolute;
+        top: 425px;
+        right: 1210px;
+        width: 250px;
+        padding: 15px;
+        background-color: #333;
+        border-radius: 8px;
+        color: #f5f5f5;
+    }
+    .ofertas ul{
+        list-style-type: none;
+        padding: 0;
+    }
+    
+    .nivel {
+        position: absolute;
+        top: 920px;
+        right: 1210px;
+        width: 250px;
+        padding: 15px;
+        background-color: #333;
+        border-radius: 8px;
+        color: #f5f5f5;
+    }
+    .nivel div{
+        display: flex;
+        align-items: center;
+        margin-bottom: 5px;
+    }
+    .nivel img{
+        margin: 0;
+        padding: 0 3px;
+        width: 30px;
+        height: auto;
+    }
 
-h3 {
-    color: #ff3333;
-    font-size: 1.5em;
-    font-family: 'Nosifer', cursive;
-}
-h2 {
-    text-align: center;
-    color: #ff3333;
-    font-size: 2em;
-    font-family: 'Nosifer', cursive;
-}
-p {
-    color: #f5f5f5;
-    margin: 5px 0;
+    /*Lista*/
+    ul {
+        list-style-type: none;
+        padding: 0;
+    }  
+    li {
+        margin: 10px 0;
+        padding: 10px;
+        border-radius: 5px;
+        background-color: #222;
+    }
+
+    /*Resctricciones*/
+    .restricciones-admision ul {
+        list-style: none;
+        padding-left: 0;
+    }
+    
+    .restricciones-admision li {
+        margin-bottom: 10px;
+        line-height: 1.5;
+        font-size: 1.1em;
+        padding-left: 30px;
+        background-image: url('Imagenes/favicon.png');
+        background-size:20px 20px; 
+        background-repeat: no-repeat;
+        background-position: 0 12.5px;
+    }
+    
+    /*Horario*/
+    table {
+        width: 100%;
+        border-collapse: collapse;
+    }
+    th, td {
+        padding: 10px;
+        text-align: center;
+        border: 1px solid #444;
+    }
+    th {
+        background-color: #222;
+        color: #ff3333;
+    }
 }
 
 /* Estilo para los artículos en la sección de Nuevos Eventos */
-#Nuevos-Eventos{
+#Galeria{
     article {
         display: flex;
         align-items: flex-start;
@@ -152,88 +239,16 @@ p {
     article .content {
         flex: 1;
     }
+    .dificultad{
+        display: flex;
+    }
+    .dificultad img{
+        margin:0 10px;
+        padding: 15px 0px;
+        width: 5%;
+        height: 5%;
+    }
 } 
-
-/* Estilo para el aside */
-#Ofertas {
-    position: absolute;
-    top: 425px;
-    right: 1210px;
-    width: 250px;
-    padding: 15px;
-    background-color: #333;
-    border-radius: 8px;
-    color: #f5f5f5;
-    h3 {
-        text-align: center;
-        color: #ff3333;
-        font-size: 1.5em;
-        font-family: 'Nosifer', cursive;
-    }
-}
-#Nivel {
-    position: absolute;
-    top: 900px;
-    right: 1210px;
-    width: 250px;
-    padding: 15px;
-    background-color: #333;
-    border-radius: 8px;
-    color: #f5f5f5;
-    h3 {
-        text-align: center;
-        color: #ff3333;
-        font-size: 1.5em;
-        font-family: 'Nosifer', cursive;
-    }
-}
-
-/*Restricciones de Admisión*/
-ul {
-    list-style-type: none;
-    padding: 0;
-}  
-li {
-    background-color: #222;
-    margin: 10px 0;
-    padding: 10px;
-    border-radius: 5px;
-}
-
-
-/*Horario*/
-table {
-    width: 100%;
-    border-collapse: collapse;
-}
-th, td {
-    padding: 10px;
-    text-align: center;
-    border: 1px solid #444;
-}
-th {
-    background-color: #222;
-    color: #ff3333;
-}
-
-/*Instalacion*/
-.Instalacion{
-    display: flex;
-    flex-direction: column;
-}
-img {
-    width: 50%;
-    height: auto;
-    margin: 10px 0;
-}
-.img-left {
-    align-self: flex-start;
-    text-align: left;
-}
-.img-right {
-    align-self: flex-end;
-    text-align: right;
-}
 
 /*Contacto*/
 #Contacto{
