@@ -26,3 +26,36 @@ p::after{
         content: "Escritorio";
     }
 }
+
+article{
+	background: white;
+	float: left;
+	min-height: 500px;
+	padding: 20px;
+	text-align: justify;
+	width: 70%;
+}
+
+
+.bloque-derecha{
+	background: white;
+	margin-top: -40px;
+	float: right;
+	width: 290px;
+}
+
+.bloque-derecha .titulo{
+	background: #1d1d1d;
+	color: white;
+	height: 50px;
+	line-height: 50px;
+	text-align: center;
+	width: 100%;
+}
+
+
+.bloque-derecha section{
+	background: url('../img/anuncio.jpg') no-repeat;
+	height: 250px;
+	width: 100%;
+}

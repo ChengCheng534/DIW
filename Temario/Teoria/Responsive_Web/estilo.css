@@ -1,0 +1,138 @@
+/* General styles */
+* {
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, sans-serif;
+    font-size: 20px;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header */
+header {
+    background-color: #333333;
+    color: #ffffff;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Navigation */
+nav {
+    background-color: #a99f4e;
+    padding: 10px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Main Content */
+main {
+    display: flex; /* Flexbox layout */
+    flex-wrap: wrap; /* Allow wrapping on smaller screens */
+    gap: 5%; /* Space between sections */
+    padding: 2%;
+}
+
+/* Sections within Main */
+main section {
+    width: 45%; /* Each section takes about half the width */
+    margin-bottom: 40px;
+}
+
+main h2 {
+    color: #797137;
+    text-decoration: underline;
+}
+
+/* Aside */
+aside {
+    float: left;
+    width: 20%;
+    padding: 20px;
+    background-color: #eeeeee;
+}
+
+/* Footer */
+footer {
+    background-color: #333333;
+    color: #ffffff;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+footer div {
+    width: 25%;
+    padding: 10px;
+}
+
+/* Media Queries */
+
+/* Hasta 1000px */
+@media (max-width: 1000px) {
+    body {
+        font-size: 18px;
+    }
+
+    nav ul li a:hover {
+        text-decoration: none;
+    }
+
+    main, aside {
+        width: 100%;
+        float: none;
+    }
+
+    aside {
+        order: 1;
+    }
+
+    footer div {
+        width: 50%;
+    }
+}
+
+/* Hasta 600px */
+@media (max-width: 600px) {
+    body {
+        font-size: 16px;
+    }
+
+    nav ul li a:hover {
+        text-decoration: none;
+    }
+
+    main, aside {
+        width: 100%;
+        float: none;
+    }
+
+    nav {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        z-index: 1;
+    }
+
+    footer div {
+        width: 100%;
+    }
+}
