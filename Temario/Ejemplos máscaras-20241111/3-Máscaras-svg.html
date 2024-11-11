@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Máscaras con imágenes SVG</title>
+    <link rel="stylesheet" href="3-Máscaras-svg.css">
+</head>
+<body>
+    <header>
+        <h1>Máscara de imagen</h1>
+    </header>
+    <article>
+        <svg width="100%" height="auto" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2560 1707">
+            <!-- Definir la imagen -->
+            <defs>
+              <pattern id="imgPattern4" patternUnits="userSpaceOnUse" width="2560" height="1707">
+                <image href="imgs/coche.jpg" width="2500" height="1700" />
+              </pattern>
+            </defs>
+          
+            <!-- Crear la máscara que divide la imagen en tres partes con espacios de 150px entre ellas -->
+            <mask id="maskDividida4">
+                <rect x="0" y="200" width="625" height="1557" fill="white" rx="20" ry="20"/>
+                <rect x="645" y="100" width="625" height="1557" fill="white" rx="20" ry="20"/>
+                <rect x="1290" y="50" width="625" height="1557" fill="white" rx="30" ry="20"/>
+                <rect x="1935" y="0" width="625" height="1557" fill="white" rx="20" ry="20"/>
+            </mask>
+          
+            <!-- Aplicar la imagen con la máscara -->
+            <rect x="0" y="0" width="2560" height="1707" fill="url(#imgPattern4)" mask="url(#maskDividida4)" />
+        </svg>
+        
+    </article>
+</body>
+</html>

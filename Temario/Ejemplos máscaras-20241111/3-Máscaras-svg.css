@@ -1,0 +1,17 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+header{
+    text-align: center;
+    justify-content: center;
+    background-color: cadetblue;
+    padding: 20px;
+}
+h2{
+    text-align: center;
+    justify-content: center;
+}
+article{
+    width: 70%;
+}
