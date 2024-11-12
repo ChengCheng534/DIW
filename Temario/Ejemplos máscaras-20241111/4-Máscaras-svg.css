@@ -1,0 +1,65 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+#myVideo{
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+}
+
+.content {
+    width: 100%;
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+    background-color: rgba(0, 128, 128, 0.8); /* Fondo semitransparente */
+    color: #f1f1f1;
+    padding: 40px;
+    max-width: 100%;
+}
+
+h2 {
+    margin-bottom: 10px;
+}
+
+#myBtn, #soundBtn {
+    margin-top: 10px;
+    width: 200px;
+    padding: 10px;
+    background-color: #007b7b;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#myBtn:hover, #soundBtn:hover {
+    background-color: red;
+}
+
+#soundImg {
+    width: 20px;
+    vertical-align: middle;
+    margin-right: 8px;
+}
+.video-title{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 36px;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+
+}
+
+
+
+
