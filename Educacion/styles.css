@@ -31,6 +31,7 @@ body {
     min-height: 100vh;
 }
 
+/*Encabezado*/
 header h1{
     background-color: var(--color1);
     margin: 0px 0px;
@@ -47,6 +48,7 @@ h2 {
     margin-bottom: 10px;
 }
 
+/**/
 main {
     display: flex;
     flex-wrap: wrap;
@@ -67,6 +69,10 @@ section {
     padding: 20px;
 }
 
+.audio{
+    visibility: hidden;
+    padding: 0px;
+}
 video, iframe {
     margin-top: 10px;
     margin-bottom: 10px;
@@ -75,6 +81,7 @@ video, iframe {
 
 }
 
+/*Pie de pagina*/
 footer{
     width: 100%;
     float: inline-start;
