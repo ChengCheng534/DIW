@@ -1,0 +1,14 @@
+button{
+    color: blueviolet;
+    transition: color 200ms ease-out 50ms;
+    border: solir black 2px;
+    width: 10vh;
+    height: 10vh;
+    transition: width 200ms ease-out 30ms;
+}
+button:hover{
+    color: darkslategray;
+    width: 40vh;
+    transform: width 5s ease-out 1s, color 5s ease 1s;
+
+}

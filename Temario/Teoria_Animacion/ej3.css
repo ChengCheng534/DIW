@@ -1,0 +1,27 @@
+.original {
+    position: relative;
+
+}
+.puzzles {
+    position: absolute;
+}
+
+.puzzle1 {
+    top: 0;
+    left: 0;
+}
+
+.puzzle2 {
+    top: 0;
+    right: 210px;
+}
+
+.puzzle3 {
+    bottom: -465px;
+    left: 30px;
+}
+
+.puzzles:hover{
+    transform: translate(200px, -20px);
+    transition: transform 1s ease;
+}

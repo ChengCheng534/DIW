@@ -1,0 +1,44 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    text-align: center;
+}
+header{
+    background-color: aqua;
+    padding: 20px;
+}
+div{
+    display: flex;
+    justify-content: center;
+}
+div img{
+    width:50%;
+    padding: 10px;
+}
+.imagen1{
+    transform-origin: top left;
+    transition: transform 0.3s ease;
+}
+.imagen1:hover{
+    transform: scale(1.1);
+}
+
+.imagen2{
+    transform-origin: top right;
+    transition: transform 0.3s ease;
+}
+.imagen2:hover{
+    transform: scale(1.1);
+}
+
+.imagen3{
+    transform-origin: 0px 100px;
+    transition: transform 0.3s ease;
+}
+.imagen3:hover{
+    transform: scale(1.1);
+}
