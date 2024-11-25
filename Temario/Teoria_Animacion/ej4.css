@@ -8,7 +8,7 @@ body{
     text-align: center;
 }
 header{
-    background-color: aqua;
+    background-color: cadetblue;
     padding: 20px;
 }
 div{
@@ -42,3 +42,5 @@ div img{
 .imagen3:hover{
     transform: scale(1.1);
 }
+
+

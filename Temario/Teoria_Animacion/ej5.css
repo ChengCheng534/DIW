@@ -1,0 +1,25 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    border: solid grey 2px;
+}
+.content{
+    display: block;
+}
+.principal{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+.principal img{
+    width: 400px;
+    height: auto;
+}
+.imagenes{
+    display: flex;
+    text-align: center;
+}
+.imagenes img{
+    width: 40%;
+}
