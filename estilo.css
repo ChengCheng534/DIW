@@ -1,6 +1,30 @@
-* {
-    margin: 10px;
-    padding: 10px;
+*{
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
     font-family: Arial, sans-serif;
+    border: solid black 1px;
 }
+body{
+    background-color: burlywood;
+}
+header{
+    width: 100%;
+    padding: 20px;
+    background-color: gray;
+    text-align: center;
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    padding: 10px 20px;
+    background-color: cadetblue;
+    margin: 10px 100px;
+}
+.informacion h2{
+    text-align: center;
+}
+
+
+
