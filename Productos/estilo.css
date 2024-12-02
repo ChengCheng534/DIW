@@ -1,0 +1,42 @@
+:root {
+    /*Paleta principal*/
+    --color1: #400303;
+    --color2: rgb(151, 8, 8);
+    --color3: rgb(248, 46, 46);
+    --color4: rgb(15, 183, 15);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    border: 2px solid gray;
+}
+
+.portada{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.producto{
+    width: 200px;
+    height: 300px;
+    /*position: absolute;*/
+    text-align: center;
+    padding: 20px;
+    margin: 10px 5px;
+    background-color: var(--color4);
+}
+.producto img {
+    margin: 30px 0px;
+    width: 150px;
+}
+.portada p{
+    font-size: 26px;
+}
+.producto::before{
+    content: "Oferta";
+}
+
+
