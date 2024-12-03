@@ -4,12 +4,14 @@
     --color2: rgb(151, 8, 8);
     --color3: rgb(248, 46, 46);
     --color4: rgb(15, 183, 15);
+    --color5: rgb(6, 110, 6);
+    --color6: rgb(64, 241, 64);
 }
 
 *{
     margin: 0;
     padding: 0;
-    border: 2px solid gray;
+    /*border: black solid 1px;*/
 }
 
 .portada{
@@ -22,21 +24,121 @@
 .producto{
     width: 200px;
     height: 300px;
-    /*position: absolute;*/
+    position: relative;
     text-align: center;
     padding: 20px;
     margin: 10px 5px;
-    background-color: var(--color4);
+    background-color: var(--color3);
+    justify-content: center;
+    text-align: center;
+    border-radius: 10px;
+    z-index: 0;
+    overflow: hidden;
+    display: flex;
+    align-items: flex-end;
 }
 .producto img {
-    margin: 30px 0px;
     width: 150px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -70%); 
+    z-index: 3;
+    transition: transform 0.6s ease-in-out;
 }
-.portada p{
-    font-size: 26px;
+.producto h1{
+    position: absolute;
+    font-size: 28px;
+    font-weight: bold;
+    color: white;
+    top: 70%;
+    z-index: 2;
+    transition: transform 0.6s ease-in-out;
 }
 .producto::before{
+    position: absolute;
     content: "Oferta";
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -60%);
+    font-size: 92px;
+    font-family: serif;
+    opacity: 0.3;
+    z-index: 1;
 }
+
+.producto::after{
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    content: " ";
+    clip-path: circle(50%);
+    background-color: var(--color2);
+    top: -10%;
+    left: 50%;
+    transition: transform 1.5s ease-in-out;
+}
+.ficha{
+    position: absolute;
+    top: 100%;
+    width: 100%;
+    transition: transform 0.6s ease-in-out;
+}
+.ficha div{
+    padding: 5px;
+}
+.tamaño{
+    display: flex;
+    justify-content: center;
+}
+.tamaño button{
+    margin: 0 5px;
+    padding: 0 5px;
+    background-color: var(--color4);
+    border-radius: 5px 10px;
+    border: var(--color5) solid 2px;
+}
+.cantidad{
+    display: flex;
+    justify-content: center;
+}
+input{
+    width: 100px;
+    text-align: center;
+    background-color: var(--color6);
+    border-radius: 5px 10px;
+    border: var(--color5) solid 2px;
+}
+.precio{
+    display: flex;
+    justify-content: center;
+}
+
+.producto button:hover{
+    background-color: var(--color5);
+}
+
+.producto:hover::after {
+    width: 250px;
+    height: 250px;
+    left: 40%;
+    clip-path: circle(50%);
+    transform: translate(-25%);
+}
+
+.producto:hover img{
+    transform: translate(-50%, -100%);
+}
+
+.producto:hover h1{
+    transform: translateY(-250%);
+}
+
+.producto:hover .ficha{
+    transform: translateY(-125%);
+    transition: transform 1.5s ease-in-out;
+}
+
+
 
 
