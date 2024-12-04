@@ -76,7 +76,7 @@
     background-color: var(--color2);
     top: -10%;
     left: 50%;
-    transition: transform 1.5s ease-in-out;
+    transition: transform 1s ease-in-out;
 }
 .ficha{
     position: absolute;
@@ -124,6 +124,7 @@ input{
     left: 40%;
     clip-path: circle(50%);
     transform: translate(-25%);
+    transition: transform 0.6s ease-in-out;
 }
 
 .producto:hover img{
