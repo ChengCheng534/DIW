@@ -64,8 +64,8 @@
   hacerlo muy pequeño en 10s: de despacio a rápido
   */
   
-  .imagen5{
-      transition: transform 10s ease-in;
+  .imagen5{transition: transform 10s ease-in;
+      
   }
   
   .imagen5:hover{
