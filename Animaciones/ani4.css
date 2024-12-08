@@ -1,0 +1,27 @@
+/* Fondo de la página */
+body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(to bottom, #1e272e, #0c2461);
+    overflow: hidden;
+}
+
+/* Árbol de Navidad */
+.arbol {
+    font-size: 80px;
+    position: relative;
+    transition: transform 0.5s ease;
+}
+
+/* Efecto de animación del parpadeo */
+@keyframes parpadeo {
+    0%, 100% {
+        color: #44bd32; /* Verde claro */
+    }
+    50% {
+        color: #fbc531; /* Amarillo */
+    }
+}
