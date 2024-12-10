@@ -2,25 +2,198 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    border: 1px solid grey
+   /* border: black solid 1px;*/
 }
-.juego{
+body{
+    position: relative;
+    width: 100%;
     display: flex;
     justify-content: center;
+    align-items: center;
+}
+.barra{
+    padding: 15px 5px;
+}
+.content h1{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 38px;
+}
+.content h3{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    padding: 5px;
+}
+.content button{
+    padding: 5px;
+    border-radius: 5px;
+    font-size: 21px;
+    background-color: rgb(121, 212, 30);
+    border: 5px solid rgb(0, 21, 3);
+}
+.content button:hover{
+    background-color: rgba(84, 180, 84, 0.79);
+}
+.juego{
+    width: 1200px;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    text-align: center;
 }
 .fondo{
+    width: 90%;
     position: relative;
+    overflow: hidden;
 }
 .fondo img{
     width: 100%;
-    height: 100%;
+    height: 100%;   
 }
-aside{
+.barra{
+    width: 20%;
+    position: relative;
     background-color: green;
     text-align: center;
     align-items: center;
     align-content: center;
 }
+
+.elementos img{
+    position: absolute;
+}
+.elementos .telon{
+    position: absolute;
+    width: 100.6%;
+    height: 103%;
+    top: 0%;
+    left: 0%;
+    opacity: 1;
+    transition: all 3s;
+}
+.fondo:hover .telon{
+    transition: all 3s;
+    transform: translate(100%);
+}
+
+.elementos .baston{
+    position: absolute;
+    width: 30px;
+    height: auto;
+    top: 63%;
+    left: 25%;
+    transform: rotate(300deg) rotateX(0deg);
+}
+.elementos .baston:hover{
+    transform: scale(1.5) rotate(300deg) rotateX(0deg);
+}
+
+.elementos .bola_navidad{
+    width: 20px;
+    height: auto;
+    top: 70%;
+    left: 70%;
+}
+.elementos .bola_navidad:hover{
+    transform: scale(1.5);
+}
+
+.elementos .bolas{
+    width: 50px;
+    height: auto;
+    top: 60%;
+    left: 81.5%;
+}
+.elementos .bolas:hover{
+    transform: scale(1.5);
+}
+
+.elementos .calcetin{
+    width: 20px;
+    height: auto;
+    top: 50%;
+    left: 21%;
+}
+.elementos .calcetin:hover{
+    transform: scale(1.5);
+}
+
+.elementos .copo{
+    width: 50px;
+    height: auto;
+    top: 20%;
+    left: 70%;
+    transform: rotateX(55deg) rotateY(-35deg);
+}
+.elementos .copo:hover{
+    transform: scale(1.5) rotateX(55deg) rotateY(-35deg);
+}
+
+.elementos .galleta{
+    width: 50px;
+    height: auto;
+    top: 60%;
+    left: 90%;
+    transform: rotate(-16deg) rotateY(-20deg);
+}
+.elementos .galleta:hover{
+    transform: scale(1.5) rotate(-16deg) rotateY(-20deg);
+}
+
+.elementos .malvaviscos{
+    width: 180px;
+    height: auto;
+    top: 75%;
+    left: 12%;
+    transform: rotate(-5deg);
+}
+.elementos .malvaviscos:hover{
+    transform: scale(1.5) rotate(-5deg);
+}
+
+.elementos .muerdago{
+    width: 50px;
+    height: auto;
+    top: 40%;
+    left: 68%;
+}
+.elementos .muerdago:hover{
+    transform: scale(1.5);
+}
+
+.elementos .muneco_nieve{
+    width: 35px;
+    height: auto;
+    top: 54%;
+    left: 3%;
+    transform: rotateY(180deg);
+}
+.elementos .muneco_nieve:hover{
+    transform: scale(1.5) rotateY(180deg);
+}
+
+.elementos .regalos{
+    width: 100px;
+    height: auto;
+    top: 72%;
+    left: 40%;
+}
+.elementos .regalos:hover{
+    transform: scale(1.5);
+}
+
+.elementos .reno{
+    width: 90px;
+    height: auto;
+    top: 45%;
+    left: 24.5%;
+    transform: rotateY(40deg) rotate(-2deg);
+}
+.elementos .reno:hover{
+    transform: scale(1.5) rotateY(40deg) rotate(-2deg);
+}
+
+
+
 
 
 
