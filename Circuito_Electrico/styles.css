@@ -1,0 +1,188 @@
+*{
+    box-sizing: border-box;
+    padding: 10px;
+    /*border: solid 2px gray;*/
+}
+body {
+    display: flex;
+    font-family: Arial, sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+    justify-content: center;
+}
+
+section{
+    padding: 20px;
+}
+
+.cont_ser, .cont_par{
+    position: relative;
+}
+
+/* CIRCUITO SERIE */
+.cont_ser .bombilla_ser1{
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    top: 29%;
+    left: 81%;
+    border-radius: 15px;
+    background-color: yellow;
+    opacity: 0;
+    animation: encenderBombilla 0.3s linear 1.5s forwards;
+}
+
+.cont_ser .bombilla_ser2{
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    top: 64%;
+    left: 81%;
+    border-radius: 15px;
+    background-color: yellow;
+    opacity: 0;
+    animation: encenderBombilla 0.3s linear 2s forwards;
+}
+
+.cont_ser .corriente_ser{
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    top: 12%;
+    left: 15%;
+    border-radius: 20px;
+    background-color: red;
+    animation: recorrerCircuito 4s linear infinite;
+}
+
+@keyframes encenderBombilla {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+ }
+@keyframes recorrerCircuito {
+    0% {
+        top: 13%;
+        left: 15%;
+    }
+    25% {
+        top: 13%;
+        left: 82%;
+    }
+    50% {
+        top: 82%;
+        left: 82%;
+    }
+    75% {
+        top: 82%;
+        left: 15%;
+    }
+    100% {
+        top: 13%;
+        left: 15%;
+    }
+}
+
+/* CIRCUITO PALARELO */
+.cont_par .bombilla_par1{
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    top: 41%;
+    left: 57.75%;
+    border-radius: 15px;
+    background-color: yellow;
+    opacity: 0;
+    animation: encenderBombilla1 0.3s linear 1.5s forwards;
+}
+
+.cont_par .bombilla_par2{
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    top: 41%;
+    left: 85.5%;
+    border-radius: 15px;
+    background-color: yellow;
+    opacity: 0;
+    animation: encenderBombilla1 0.3s linear 1.5s forwards;
+}
+
+.cont_par .corriente_par1{
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    top: 17.5%;
+    left: 9.5%;
+    border-radius: 20px;
+    background-color: red;
+    animation: recorrerCircuito1 4s linear infinite;
+}
+
+.cont_par .corriente_par2{
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    top: 12%;
+    left: 15%;
+    border-radius: 20px;
+    background-color: red;
+    animation: recorrerCircuito2 4s linear infinite;
+}
+
+@keyframes encenderBombilla1 {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+@keyframes recorrerCircuito1 {
+    0% {
+        top: 17.5%;
+        left: 9.5%;
+    }
+    25% {
+        top: 17.5%;
+        left: 58.5%;
+    }
+    50% {
+        top: 67%;
+        left: 58.5%;
+    }
+    75% {
+        top: 67%;
+        left: 9.5%;
+    }
+    100% {
+        top: 17.5%;
+        left: 9.5%;
+    }
+}
+@keyframes recorrerCircuito2 {
+    0% {
+        top: 17.5%;
+        left: 9.5%;
+    }
+    25% {
+        top: 17.5%;
+        left: 86%;
+    }
+    50% {
+        top: 67%;
+        left: 86%;
+    }
+    75% {
+        top: 67%;
+        left: 9.5%;
+    }
+    100% {
+        top: 17.5%;
+        left: 9.5%;
+    }
+}

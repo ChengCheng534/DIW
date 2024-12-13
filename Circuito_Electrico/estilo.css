@@ -1,0 +1,120 @@
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            margin: 0;
+            padding: 20px;
+            text-align: center;
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        .cont_ser, .cont_par {
+            position: relative;
+            display: inline-block;
+            margin: 20px;
+        }
+
+        .circuito_ser, .circuito_par {
+            width: 300px;
+            height: auto;
+        }
+
+        /* Animaciones del circuito serie */
+        .corriente_ser {
+            position: absolute;
+            top: 50%;
+            left: 0;
+            width: 300px;
+            height: 5px;
+            background: linear-gradient(90deg, yellow, transparent);
+            animation: flow-serie 2s infinite linear;
+        }
+
+        .bombilla_ser1, .bombilla_ser2 {
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            background-color: #999;
+            border-radius: 50%;
+            box-shadow: 0 0 10px #333;
+            transition: background-color 0.5s, box-shadow 0.5s;
+        }
+
+        .bombilla_ser1 {
+            top: 20%;
+            left: 30%;
+        }
+
+        .bombilla_ser2 {
+            top: 20%;
+            left: 70%;
+        }
+
+        /* Animaciones del circuito paralelo */
+        .corriente_par1, .corriente_par2 {
+            position: absolute;
+            width: 5px;
+            height: 100px;
+            background: linear-gradient(180deg, cyan, transparent);
+            animation: flow-paralelo 2s infinite linear;
+        }
+
+        .corriente_par1 {
+            top: 30%;
+            left: 35%;
+        }
+
+        .corriente_par2 {
+            top: 30%;
+            left: 65%;
+        }
+
+        .bombilla_par1, .bombilla_par2 {
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            background-color: #999;
+            border-radius: 50%;
+            box-shadow: 0 0 10px #333;
+            transition: background-color 0.5s, box-shadow 0.5s;
+        }
+
+        .bombilla_par1 {
+            top: 70%;
+            left: 30%;
+        }
+
+        .bombilla_par2 {
+            top: 70%;
+            left: 70%;
+        }
+
+        /* Keyframes */
+        @keyframes flow-serie {
+            0% {
+                background-position: 0 0;
+            }
+            100% {
+                background-position: 300px 0;
+            }
+        }
+
+        @keyframes flow-paralelo {
+            0% {
+                background-position: 0 0;
+            }
+            100% {
+                background-position: 0 100px;
+            }
+        }
+
+        /* Bombilla encendida */
+        .cont_ser:hover .bombilla_ser1, 
+        .cont_ser:hover .bombilla_ser2,
+        .cont_par:hover .bombilla_par1, 
+        .cont_par:hover .bombilla_par2 {
+            background-color: yellow;
+            box-shadow: 0 0 20px yellow;
+        }
