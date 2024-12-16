@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <h2>¿A quien se toca?</h2>
+    <div class="ruleta">
+        <div class="tablon" id="tablon">
+            <img src="imagen/ruleta.png" alt="Ruleta">
+        </div>
+        <div class="flecha"></div>
+        <button id="jugar">Jugar</button>
+    </div>
+
+    <script>
+        const tablon = document.getElementById('tablon');
+        const button = document.getElementById('jugar');
+
+        button.addEventListener('click', () => {
+            // Generar un número aleatorio para la rotación final
+            const randomDegree = Math.floor(Math.random() * 3600) + 360; // Aseguramos varias vueltas
+            tablon.style.transform = `rotate(${randomDegree}deg)`;
+        });
+    </script>
+</body>
+</html>

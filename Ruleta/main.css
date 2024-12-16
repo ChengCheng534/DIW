@@ -1,0 +1,44 @@
+*{
+    padding: 0;
+    margin: 0;
+    /*border: solid 2px gray;*/
+}
+body{
+    padding: 30px;
+    text-align: center;
+    box-sizing: border-box;
+}
+.ruleta{
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+.tablon{
+    position: absolute;
+    width: 100%;
+    height: auto;
+    transition: all 4s ease-in-out;
+}
+.tablon img{
+    width: 500px;
+}
+.flecha{
+    position: absolute;
+    top: 230px;
+    left: 120px;
+    width: 30px;
+    height: 30px;
+    background-color: black;
+    clip-path: polygon(0% 0, 100% 50%, 0% 100%, 0 100%);
+    /*clip-path: polygon(0%, 0%, 100%, 100%, 50%);*/
+    z-index: 1;
+}
+button{
+    top: 500px;
+    position: absolute;
+    padding: 10px 30px;
+    border-radius: 5px;
+}
+.button:hover{
+    background-color: grey;
+}
