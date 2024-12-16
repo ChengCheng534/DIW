@@ -1,4 +1,64 @@
 *{
-    padding: 10px;
-    border: solid 2px gray
+    padding: 100px 30px;
+    /*border: solid 2px gray*/
+}
+.papelera{
+    position: relative;
+}
+
+.pedal, .tapa, .inferior, .superior{
+    position: absolute; 
+    width: 200px;
+    height: auto;
+}
+
+.papelera .pedal{
+    top: 94.5%;
+    left: 47.7%;
+    z-index: 3;
+    width: 60px;
+}
+.papelera .inferior{
+    top: 0%;
+    left: 54%;
+    z-index: 1;
+    /*transform: rotate(50deg);*/
+    transform: rotate(-28deg);
+}
+.papelera .superior{
+    top: 1%;
+    left: 50%;
+    z-index: 2;
+}
+
+.papelera .papel{
+    position: absolute;
+    width: 50px;
+    top: 100%;
+    left: 0%;
+    z-index: 0;
+}
+.pedal:hover ~ .inferior{
+    top: -50%;
+    left: 47%;
+    transition: all 1s ease;
+    transform: rotate(50deg); 
+}
+.pedal:hover ~ .papel{
+    animation: tirarPapel 3s linear forwards;
+}
+
+@keyframes tirarPapel {
+    0% {
+        top: 100%;
+        left: 0%;
+    }
+    50% {
+        top: -20%;
+        left: 58%;
+    }
+    100% {
+        top: 20%;
+        left: 58%;
+    }
 }
