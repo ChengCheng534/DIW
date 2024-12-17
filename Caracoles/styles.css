@@ -1,0 +1,89 @@
+/* Reset de márgenes y rellenos */
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    padding: 10px;
+}
+
+h1 {
+    padding: 10px;
+    text-align: center;
+}
+
+.boton {
+    padding: 10px;
+    text-align: center;
+}
+
+button {   
+    padding: 5px 20px;
+    border-radius: 5px;
+    border: solid 2px blue;
+    cursor: pointer;
+}
+
+button:hover {
+    scale: 1.1;
+}
+
+img {
+    width: 100px;
+}
+
+.carrera {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.pista1, .pista2, .pista3 {
+    position: relative;
+    height: 30px;
+    padding: 30px;
+    margin: 5px;
+    background-image: url('imagen/suelo.jpg');
+    background-position: center; 
+    background-size: 100% 150%;  
+}
+
+.caracol1, .caracol2, .caracol3 {
+    top: 5%;
+    left: 0%;
+    position: absolute;
+}
+
+/* Animación de los caracoles */
+@keyframes carreras {
+    0% {
+        top: 5%;
+        left: 0%;
+    }
+    100% {
+        top: 5%;
+        left: 85%;
+    }
+}
+
+/* Estilo para mostrar el mensaje del ganador */
+.pista1::before, .pista2::before, .pista3::before {
+    content: "";
+    position: absolute;
+    z-index: 1;
+    top: 40%;
+    left: 20%;
+    font-style: oblique;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    opacity: 0; /* Oculto por defecto */
+    transition: opacity 0.5s ease-in-out;
+}
+
+.ganador::before {
+    transform: scale(2);
+    transition: all 1s ease;
+    content: "¡Ganador!";
+    opacity: 1; /* Muestra el mensaje */
+}

@@ -1,24 +1,30 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="estilo.css">
+    <title>Carrera de Caracoles</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Enlazamos el CSS -->
 </head>
 <body>
-    <h1>Carrera de caracol</h1>
-    <button>empezar</button>
+    <h1>Carrera de Caracoles</h1>
+
+    <div class="boton">
+        <button onclick="empezarCarrera()">Empezar</button>
+    </div>
+
     <div class="carrera">
-        <div class="pista1">
-            <img src="imagen/caracol.png" alt="">
+        <div class="pista1" id="pista1">
+            <img src="imagen/caracol.png" alt="Caracol 1" class="caracol1" id="caracol1">
         </div>
-        <div class="pista2">
-            <img src="imagen/caracol.png" alt="">
+        <div class="pista2" id="pista2">
+            <img src="imagen/caracol.png" alt="Caracol 2" class="caracol2" id="caracol2">
         </div>
-        <div class="piesta3">
-            <img src="imagen/caracol.png" alt="">
+        <div class="pista3" id="pista3">
+            <img src="imagen/caracol.png" alt="Caracol 3" class="caracol3" id="caracol3">
         </div>
     </div>
+
+    <script src="script.js"></script> <!-- Enlazamos el JavaScript -->
 </body>
 </html>
