@@ -1,0 +1,40 @@
+:root{
+    --azul: blue;
+    --verde: green;
+    --amarillo: yellow;
+    --naranja: orange;
+    --rojo: red;
+}
+
+body{
+    padding: 20px;
+    margin: 10px;
+    text-align: center;
+}
+
+.reloj{
+    width: 300px;
+    animation: rotarReloj 10s linear;
+}
+.progreso{
+    width: 80%;
+    padding: 10vh;
+    border: var(--rojo) solid 1vh;
+    border-radius: 15rem;
+}
+
+.proceso .relleno{
+    width: 100%;
+    height: 100%;
+    animation: recorrerRelleno 10s linear;
+    background-color: var(--azul);
+}
+
+@keyframes rotarReloj {
+    100%{
+        transform: rotate(360deg); 
+    }
+}
+
+@keyframes recorrerRelleno {
+}
