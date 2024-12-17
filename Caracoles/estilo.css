@@ -1,0 +1,9 @@
+body{
+    text-align: center;
+}
+img{
+    width: 100px;
+}
+.pista1, .pista2, .pista3{
+    padding: 30px;
+}
