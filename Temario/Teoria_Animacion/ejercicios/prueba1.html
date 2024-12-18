@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Backface Visibility</title>
+  <style>
+    .card {
+      width: 200px;
+      height: 200px;
+      background-color: red;
+      color: white;
+      text-align: center;
+      line-height: 200px;
+      font-size: 24px;
+      border: 1px solid black;
+      transform: rotateY(0deg);
+      transition: transform 1s;
+      backface-visibility: hidden; /* Oculta la cara trasera */
+      position: absolute;
+    }
+
+    .card-back {
+      background-color: blue;
+      color: white;
+      transform: rotateY(180deg); /* La cara trasera de la tarjeta */
+    }
+
+    .card-container {
+      perspective: 1000px;
+      position: relative;
+      width: 200px;
+      height: 200px;
+    }
+
+    .card:hover {
+      transform: rotateY(180deg); /* Gira la tarjeta al pasar el mouse */
+    }
+  </style>
+</head>
+<body>
+  <h2>Hover para girar la tarjeta</h2>
+  <div class="card-container">
+    <div class="card">Frente</div>
+    <div class="card card-back">Atrás</div>
+  </div>
+</body>
+</html>

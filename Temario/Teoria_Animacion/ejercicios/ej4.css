@@ -36,11 +36,36 @@ div img{
 }
 
 .imagen3{
-    transform-origin: 0px 100px;
+    transform-origin: left;
     transition: transform 0.3s ease;
 }
 .imagen3:hover{
     transform: scale(1.1);
 }
+
+.imagen4{
+    transform-origin: right;
+    transition: transform 0.3s ease;
+}
+.imagen4:hover{
+    transform: scale(1.1);
+}
+
+.imagen5{
+    transform-origin: bottom left;
+    transition: transform 0.3s ease;
+}
+.imagen5:hover{
+    transform: scale(1.1);
+}
+
+.imagen6{
+    transform-origin: bottom right;
+    transition: transform 0.3s ease;
+}
+.imagen6:hover{
+    transform: scale(1.1);
+}
+
 
 

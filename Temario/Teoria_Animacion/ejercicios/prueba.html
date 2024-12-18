@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Transiciones de Tiempo</title>
+  <style>
+    .box {
+      width: 100px;
+      height: 100px;
+      background-color: red;
+      transition: transform 2s; /* Aplica la curva por defecto (ease) */
+    }
+
+    .box.ease { transition-timing-function: ease; }
+    .box.ease-in { transition-timing-function: ease-in; }
+    .box.ease-out { transition-timing-function: ease-out; }
+    .box.ease-in-out { transition-timing-function: ease-in-out; }
+
+    .move { transform: translateX(500px); }
+  </style>
+</head>
+<body>
+  <h3>Haz clic para mover:</h3>
+  <div class="box ease">Ease</div>
+  <div class="box ease-in">Ease-in</div>
+  <div class="box ease-out">Ease-out</div>
+  <div class="box ease-in-out">Ease-in-out</div>
+
+  <button onclick="moveBoxes()">Mover</button>
+
+  <script>
+    function moveBoxes() {
+      document.querySelectorAll('.box').forEach(box => box.classList.add('move'));
+    }
+  </script>
+</body>
+</html>
