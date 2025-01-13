@@ -1,0 +1,58 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+}
+
+.contenedor {
+    position: relative;
+    width: 300px;
+    height: 200px;
+    overflow: hidden;
+    border: 2px solid #ccc;
+    display: flex;
+}
+
+.imagen1, .imagen2, .imagen3, .imagen4 {
+    position: absolute;
+    top: 0;
+    left: 100%;
+    width: 300px;
+    height: 100%;
+    object-fit: cover;
+    animation: cambiarImagen 8s linear infinite;
+}
+
+.imagen1 {
+    animation-delay: 0s;
+}
+.imagen2 {
+    animation-delay: 2s;
+}
+.imagen3 {
+    animation-delay: 4s;
+}
+.imagen4 {
+    animation-delay: 6s;
+}
+
+@keyframes cambiarImagen {
+    0% {
+        transform: translateX(100%);
+    }
+    25% {
+        transform: translateX(0%);
+    }
+    50% {
+        transform: translateX(0%);
+    }
+    75% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
