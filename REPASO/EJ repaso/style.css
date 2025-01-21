@@ -1,0 +1,140 @@
+*{
+    padding: 0;
+    /*border: solid black 1px;*/
+}
+#sky{
+    position: relative;
+    padding: 0px 0px;
+    border: solid white 2px;
+    animation: cambiarDia 12s ease-in 0s infinite;
+    overflow: hidden;
+    z-index: 0;
+}
+#cloud{
+    position: relative;
+    padding: 200px;
+}
+.cloud-1, .cloud-2, .cloud-3{
+    position: absolute;
+    top: 10%;
+    left: 30%;
+    padding: 20px 40px;
+    border-radius: 20px;
+    background-color: white;
+    opacity: 0.8;
+    animation: moverNuve 5s linear infinite;
+    z-index: 2;
+}
+.cloud-1{
+    top: 10%;
+    left: 30%;
+}
+
+.cloud-2{
+    top: 30%;
+    left: 10%;
+}
+.cloud-3{
+    top: 40%;
+    left: 50%;
+}
+
+#sun{
+    position: absolute;
+    padding: 10px;
+    border-radius: 20px;
+    background-color: yellow;
+    animation: salirSol 12s ease-in-out infinite;
+    opacity: 0.8;
+    z-index: 1;
+}
+
+@keyframes cambiarDia {
+    0% {
+        background-color: rgb(28, 49, 66); 
+    }
+    20%{
+        background-color: rgb(204, 227, 227); 
+    }
+    25% {
+        background-color: rgb(204, 227, 227); 
+    }
+    30%{
+        background-color: rgb(204, 227, 227); 
+    }
+    50% {
+        background-color: rgb(28, 49, 66); 
+    }
+    70%{
+        background-color: rgb(204, 227, 227); 
+    }
+    75% {
+        background-color: rgb(204, 227, 227); 
+    }
+    80%{
+        background-color: rgb(204, 227, 227); 
+    }
+    100% {
+        background-color: rgb(28, 49, 66); 
+    }
+
+}
+
+@keyframes moverNuve {
+    0% {
+        transform: translate(-500px);
+    }
+    100% {
+        transform: translate(600px);
+    }
+}
+
+@keyframes salirSol {
+    0% {
+        top: 100%;
+        left: 0%; 
+        scale: 1;
+    }
+    20%{
+        top: 15%;
+        left: 50%;
+        scale: 5;
+    }
+    25%{
+        top: 15%;
+        left: 50%;
+        scale: 5;
+    }
+    30%{
+        top: 15%;
+        left: 50%;
+        scale: 5;
+    }
+    50%{
+        top: 100%;
+        left: 100%;
+        scale: 1;
+    }
+    70%{
+        top: 15%;
+        left: 50%;
+        scale: 5;
+    }
+    75%{
+        top: 15%;
+        left: 50%;
+        scale: 5;
+    }
+    80%{
+        top: 15%;
+        left: 50%;
+        scale: 5;
+    }
+    100% {
+        top: 100%;
+        left: 0%;
+        scale: 1;
+    }
+}
+
+
