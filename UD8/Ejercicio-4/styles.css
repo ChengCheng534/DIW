@@ -1,0 +1,58 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+div{
+    background-color: antiquewhite;
+}
+h1{
+    padding: 10px;
+    text-align: center;
+    text-decoration: underline;
+}
+h2{
+    padding: 20px 60px;
+    text-decoration: underline;
+}
+p{
+    padding: 30px 100px;
+    background-color: darksalmon;
+    margin: 10px 60px;
+    border-radius: 5px;
+    font-size: 16px;
+}
+.navigation{
+    background-color: bisque;
+    padding: 25px;
+    border-top: 5px solid rgb(180, 94, 58);
+    border-bottom: 5px solid rgb(180, 94, 58);
+    text-align: center;
+}
+.navigation a{
+    padding: 5px 20px;
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+    border: solid 2px darkred;
+    border-radius: 5px; 
+    margin: auto 10px;
+
+}
+
+table{
+    width: 100%;
+    padding: 10px 20px;
+    text-align: center;
+    justify-content: center;
+    margin: 10px 0px;
+}
+th{
+    font-size: 18px;
+
+}
+tr, th, td{
+    width: 20px;
+    padding: 10px;
+    border: solid 2px darkred;
+    border-radius: 5px;
+}
