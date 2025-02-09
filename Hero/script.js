@@ -1,17 +1,35 @@
-let currentIndex = 0;
+const coches = document.querySelector('.coches');
+const puntos = document.querySelectorAll('.punto');
+const totalCoches = document.querySelectorAll('.coche').length;
+let index = 0;
+let intervalo;
 
-function moveSlide(direction) {
-    const slides = document.querySelectorAll('.coche');
-    const totalSlides = slides.length;
-
-    currentIndex += direction;
-
-    if (currentIndex < 0) {
-        currentIndex = totalSlides - 1;
-    } else if (currentIndex >= totalSlides) {
-        currentIndex = 0;
-    }
-
-    const carrusel = document.querySelector('.carrusel');
-    carrusel.style.transform = `translateX(-${currentIndex * 100}%)`;
+// Función para actualizar el carrusel y los puntos
+function updateCarrusel() {
+    coches.style.transform = `translateX(-${index * 100}vw)`;
+    document.querySelector('.punto.active').classList.remove('active');
+    puntos[index].classList.add('active');
 }
+
+// Click en los puntos indicadores
+puntos.forEach((punto, i) => {
+    punto.addEventListener('click', () => {
+        index = i;
+        updateCarrusel();
+        resetIntervalo();
+    });
+});
+
+// Cambio automático cada 5 segundos
+function autoSlide() {
+    index = (index + 1) % totalCoches;
+    updateCarrusel();
+}
+
+function resetIntervalo() {
+    clearInterval(intervalo);
+    intervalo = setInterval(autoSlide, 5000);
+}
+
+// Iniciar el carrusel automático
+intervalo = setInterval(autoSlide, 3000);
