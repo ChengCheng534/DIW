@@ -15,7 +15,6 @@
     display: flex;
     width: 100%;
     height: 100%;
-    background-color: aqua;
 }
 
 .coches {
@@ -42,7 +41,8 @@
     height: auto;
     order: 1;
     opacity: 0; /* Inicia oculta */
-    animation: fadeIn 3s ease-in-out forwards infinite;
+    animation: movimientoCoche 3s ease-in-out forwards infinite;
+    z-index: 0;
 }
 
 /* Texto a la derecha */
@@ -53,6 +53,10 @@
     display: flex;
     flex-direction: column; /* Organiza título arriba y texto abajo */
     align-items: flex-start; /* Asegura que el texto esté alineado a la izquierda */
+}
+
+.texto{
+    z-index: 1;
 }
 
 /* Ajustes de títulos y párrafos */
@@ -83,7 +87,7 @@
     background: gray;
     border-radius: 50%;
     cursor: pointer;
-    transition: background 0.3s;
+    transition: 0.3s;
 }
 
 .punto.active {
@@ -91,7 +95,7 @@
 }
 
 /* Animación de Fade In-Out para la imagen */
-@keyframes fadeIn {
+@keyframes movimientoCoche {
     0% {
         opacity: 0;
         transform: scale(0.9);
