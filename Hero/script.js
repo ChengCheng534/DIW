@@ -20,7 +20,6 @@ puntos.forEach((punto, i) => {
     });
 });
 
-// Cambio automático cada 5 segundos
 function autoSlide() {
     index = (index + 1) % totalCoches;
     updateCarrusel();
@@ -32,4 +31,4 @@ function resetIntervalo() {
 }
 
 // Iniciar el carrusel automático
-intervalo = setInterval(autoSlide, 3000);
+intervalo = setInterval(autoSlide, 4000);
