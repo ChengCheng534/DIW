@@ -1,6 +1,17 @@
-.logo{
-    width: 100px;
+*{
+    border: solid 1px black;
 }
-img{
-    width: 100px;
+body{
+    background-image: url(Img/fondo.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+.hero-image{
+    background-image: url(Img/imagen1.jpg);
+    height: 350px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
 }
