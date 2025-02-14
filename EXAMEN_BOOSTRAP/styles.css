@@ -1,3 +1,6 @@
+*{
+    border: solid red 1px;
+}
 .carousel-item {
     height: 500px;
 }
@@ -10,6 +13,32 @@
 
 
 /* TARJETAS DE ACTIVIDADES */
-.card-img {
+.card-img1, .card-img2, .card-img3, .card-img4, .card-img5{
     height: 150px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
 }
+
+.card-img1{
+    background-image: url(media/actividad1.webp);
+}
+
+.card-img2{
+    background-image: url(media/actividad2.jpg);
+}
+
+.card-img3{
+    background-image: url(media/actividad3.jpg);
+}
+
+.card-img4{
+    background-image: url(media/actividad4.webp);
+}
+
+.card-img5{
+    background-image: url(media/actividad5.jpg);
+}
+
+
