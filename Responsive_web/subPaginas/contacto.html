@@ -11,28 +11,64 @@
 <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-light">
         <div class="container">
-            <a class="navbar-brand text-black" href="../index.html">
-                <img src="../Img/logoT.png" alt="Logo" width="70"> Escuela de Ski 
+            <a class="col-6 navbar-brand text-black" href="../index.html">
+                <img src="../Img/logoT.png" alt="Logo" width="70"> Escuela de Esquí 
             </a>
             <button class="navbar-toggler bg-primary" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav me-autom offset-md-6">
-                    <li class="nav-item"><a class="nav-link text text-black" href="galeria.html">Galería</a></li>
-                    <li class="nav-item offset-md-"><a class="nav-link text-black" href="contacto.html">Contacto</a></li>
+                <ul class="col-4 navbar-nav me-auto offset-md- offset-lg-4">
+                    <li class="col-6 nav-item text-center"><a class="nav-link text-black" href="galeria.html">Galería</a>  
+                    </li>
+                    <li class="col-6 nav-item text-center"><a class="nav-link text-black" href="contacto.html">Contacto</a></li>
                 </ul>
-                <form class="d-flex offset-md-1">
-                    <input class="form-control me-2" type="search" placeholder="Buscar">
-                    <button class="btn btn-outline-light" type="submit"><i class="fas fa-search"></i></button>
+                <form class="col-4 d-flex">
+                    <input class="form-control me-2 offset-1" type="search" placeholder="Buscar">
+                    <button class="btn" type="submit"><i class="fas fa-search"></i></button>
                 </form>
             </div>
         </div>
     </nav>
 
     <div class="container my-5">
-        <h2>Nuestros contactos</h2>
-        <p>Información sobre el lugar...</p>
+        <div class="text-center text-white">
+            <h2>Nuestros contactos</h2>
+            <p>Ponte en contacto con nosotros para más información.</p>
+        </div>
+
+        <div class="row">
+            <div class="contact-form mx-auto col-10 col-md-6 col-lg-6 order-md-2 order-lg-2">
+                <form class="row g-3">
+                    <div class="col-md-12">
+                        <label for="nombre" class="form-label">Nombre</label>
+                        <input type="text" class="form-control" id="nombre" placeholder="Tu nombre">
+                    </div>
+                    <div class="col-md-12">
+                        <label for="email" class="form-label">Correo Electrónico</label>
+                        <input type="email" class="form-control" id="email" placeholder="tuemail@example.com">
+                    </div>
+                    <div class="col-12">
+                        <label for="mensaje" class="form-label">Mensaje</label>
+                        <textarea class="form-control" id="mensaje" rows="4" placeholder="Escribe tu mensaje"></textarea>
+                    </div>
+                    <div class="col-12 text-center">
+                        <button type="submit" class="btn btn-primary px-5">Enviar</button>
+                    </div>
+                </form>
+            </div>
+    
+            <div class="mx-auto col-12 col-md-5 col-lg-5 text-center order-md-1 order-lg-1">
+                <div class="contact-info">
+                    <h4>Información de Contacto</h4>
+                    <p><i class="fas fa-map-marker-alt"></i> Dirección: Calle de la Montaña 123, Estación de Esquí</p>
+                    <p><i class="fas fa-phone"></i> Teléfono: +34 123 456 789</p>
+                    <p><i class="fas fa-envelope"></i> Correo: info@escuelaesqui.com</p>
+                    <img src="../Img/logoT.png" alt="" width="70">
+                </div>
+                
+            </div>
+        </div>
     </div>
     
     <footer class="bg-light text-black text-center py-3">
