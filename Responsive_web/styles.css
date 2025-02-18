@@ -36,6 +36,7 @@ body{
     color: white;
     padding: 20px;
 }
+
 .btn-custom {
     background-color: #007bff;
     color: white;
@@ -48,49 +49,8 @@ body{
     background-color: #0056b3;
 }
 
-.carousel-inner img {
-    width: 100px;
-    height: 600px;
-    object-fit: cover;
-}
-.contact-form {
-    background: #f8f9fa;
-    padding: 30px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-.contact-form .form-control {
-    border-radius: 8px;
-}
-.contact-form button {
-    border-radius: 8px;
-}
-.contact-form button:hover {
-    background: #0056b3;
-}
-.contact-info {
-    background: #e9ecef;
-    padding: 20px;
-    border-radius: 10px;
-    margin-top: 30px;
-    text-align: center;
-}
-.contact-info i {
-    font-size: 20px;
-    margin-right: 10px;
-    color: #007bff;
-}
-
 @media (max-width: 768px) {
     .hero {
         height: 50vh;
-    }
-    #carouselExample {
-        max-width: 80%;
-        margin: auto;
-    }
-    #carouselExample img {
-        height: 200px;
-        object-fit: cover;
     }
 }
