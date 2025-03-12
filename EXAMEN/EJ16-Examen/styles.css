@@ -143,6 +143,11 @@ body {
     visibility: visible;
     transform: rotate(-380deg) translate(-5px, -60px);
     scale: 3;
+    transition-delay: 1s;
+}
+
+.puerta:not(:hover) {
+    transition-delay: 1s;
 }
 
 .copos {
@@ -160,7 +165,8 @@ body {
     top: 18%;
     scale: 1;
     visibility: hidden; /* El regalo está oculto al principio */
-    transition: transform 1s ease-in-out; /* Transición para el movimiento de caída */
+    opacity: 0; /* Inicialmente invisible */
+    transition: transform 1s ease-in-out, opacity 1s ease 1s; /* Transición para el movimiento de caída */
 }
 
 .santa {
@@ -181,8 +187,21 @@ body {
     visibility: visible; /* El regalo se vuelve visible */
     opacity: 1; /* El regalo se hace visible con opacidad */
     transform: translate(0px, 295px) rotate(360deg); /* El regalo cae y rota */
-    transition: transform 1s ease-in-out; /* Transición de la caída */
+    transition: transform 1s ease-in-out, opacity 1s ease 2s; /* Transición de la caída */
     transition-delay: 1s; /* No hay retraso, el regalo cae cuando Santa pasa */
+}
+
+/* Cuando se quita el hover, Santa y el regalo vuelven a su posición original sin animación */
+.santa:not(:hover) {
+    transform: translate(0px, 0px); /* Santa vuelve a su posición inicial */
+    transition: none; /* Sin animación al quitar el hover */
+}
+
+.santa:not(:hover) ~ .regalo {
+    visibility: hidden; /* El regalo se oculta */
+    opacity: 0; /* El regalo se hace invisible */
+    transform: translate(0px, 0px) rotate(0deg); /* El regalo vuelve a su posición original */
+    transition: none; /* Sin animación al quitar el hover */
 }
 
 .casa:hover ~ .copos{
