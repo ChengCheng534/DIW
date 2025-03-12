@@ -1,0 +1,186 @@
+:root {
+    --negro: #000000;
+    --rojo-telepizza: #BE0000;
+    --crema: rgb(244,239,229);
+    --blanco: #FFFFFF;
+    --marron-oscuro: #3E2723;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "trebuchet ms", arial, sans-serif;
+    /*border: 1px solid black;*/
+}
+
+body > * {
+    padding: 20px 50px;
+}
+
+header{
+    position: relative;
+    display: flex;
+    background-color: var(--rojo-telepizza);
+    color: var(--blanco);
+    z-index: 2;
+}
+header div{
+    width: 75%;
+}
+h2{
+    margin: 10px 0; 
+}
+header nav{
+    width: 25%;
+    justify-content: space-around;
+}
+nav ul{
+    gap: 50px;
+    display: flex;
+}
+nav li{
+    width: auto;
+    margin-top: 30px;
+    text-align: center;
+    text-transform: none;
+}
+nav a{
+    display: inline-block;
+    flex: 1;
+    color: var(--blanco);
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none;
+}
+nav > li:hover{
+    border-bottom: var(--negro);
+}
+main{
+    background-image: url(imgs/fondo.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.presentacion{
+    position: relative;
+    display: flex;
+}
+.pizzaloca{
+    width: 20%;
+    margin-top: 80px;
+    position: relative;
+}
+.pizzaloca figcaption{
+    color: var(--crema);
+    font-size: 12px;
+    font-style: italic;
+    margin-left: 5px;
+}
+.destello{
+    position: absolute;
+    top: -10%;
+    left: -80%;
+    z-index: 0;
+    scale: 1.75;
+    opacity: 0.8;
+}
+
+.principal{
+    width: 70%;
+    margin-left: 5%;
+    margin-right: 5%;
+    z-index: 1;
+}
+.submenu{
+    background-color: var(--crema);
+    border-radius: 20px;
+    margin-bottom: 1%;
+    padding: 5px 5px;
+}
+.submenu ul{
+    display: flex;
+    justify-content: space-around;
+    /*list-style-image: url(imgs/icono-pizza.png);*/
+}
+.submenu li{
+    font-size: 20px;
+    font-weight: bold;
+    padding: 10px;
+    text-decoration: none;
+    border-radius: 20px var(--crema);
+}
+li:hover{
+    background-color: var(--rojo-telepizza);
+    color: var(--blanco);
+    border-radius: 20px;
+}
+.oferta{
+    display: flex;
+    width: 100%;
+    float: left;
+}
+.oferta img{
+    width: 200px;
+}
+.principal article{
+    margin-top: 20px;
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+    color: var(--rojo-telepizza);
+    
+}
+.principal > article figure, p{
+    backface-visibility: hidden;
+    transition: transform 0.6s ease;
+}
+.principal article figure{
+    transform: rotateX(0deg);
+    background-color: var(--crema);
+}
+.principal article p{
+    transform: rotateY(180deg);
+}
+
+.principal article figure:hover{
+    transform: rotateY(180deg);
+    transition: transform 1s ease;
+}
+
+.principal article p:hover{
+    transform: rotateY(0deg);
+    transition: transform 1s ease;
+}
+
+.otros{
+    position: relative;
+    width: 100%;
+    margin-top: 20px;
+    float: unset;
+    display: flex;
+    z-index: 3;
+}
+.otros article{
+    background-color: var(--rojo-telepizza);
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+    width: auto;
+    border-radius: 10px;
+    color: var(--blanco);
+}
+
+footer{
+    background-color: var(--rojo-telepizza);
+    display: flex;
+}
+footer div{
+    float: inline-end;
+    width: 100%;
+    text-align: center;
+    color: var(--blanco);
+    font-weight: bold;
+    background-color: var(--rojo-telepizza);
+}
+
+footer img{
+    width: 20%;
+}
