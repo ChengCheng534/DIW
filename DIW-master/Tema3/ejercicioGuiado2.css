@@ -1,0 +1,40 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+#navVertical {
+    width: 500px;
+
+    .mainmenu,
+    .submenu {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    .mainmenu {
+        margin: 200px 0 0 20px;
+    }
+
+    .mainmenu a {
+        display: block;
+        background-color: grey;
+        text-decoration: none;
+        padding: 10px;
+        color: black;
+    }
+
+    .mainmenu a:hover {
+        background-color: lightgrey;
+    }
+
+    .submenu {
+        display: none;
+    }
+
+    .mainmenu li:hover .submenu {
+        display: block;
+    }
+}

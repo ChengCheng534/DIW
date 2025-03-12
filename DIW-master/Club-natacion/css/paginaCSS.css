@@ -1,0 +1,106 @@
+h1{
+    color: #1b4f72;
+}
+
+body{
+    background-color: #d6eaf8;
+}
+
+section article{
+    display: inline-block;
+    width: 33%;
+}
+
+#gridPlantilla{
+    display: grid;
+    box-sizing: border-box;
+    grid-template-columns: auto auto auto;
+    background-color: #2196F3;
+    padding: 10px;
+}
+/*
+nav.vertical{
+    width: 500px;
+
+    .mainmenu,
+    .submenu {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    .mainmenu {
+        margin: 200px 0 0 20px;
+    }
+
+    .mainmenu a {
+        display: block;
+        background-color: #21618c;
+        text-decoration: none;
+        padding: 10px;
+        color: black;
+    }
+
+    .mainmenu a:hover {
+        background-color: #d6eaf8;
+    }
+
+    .submenu {
+        display: none;
+    }
+
+    .submenu li a{
+        background-color: #85c1e9;
+    }
+
+    .mainmenu li:hover .submenu {
+        display: block;
+        
+    }
+}
+*/
+.horizontal{
+
+    display: inline;
+
+    .mainmenu,
+    .submenu {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    .mainmenu{
+        background-color: #21618c;
+        overflow: hidden; 
+    }
+
+    li{
+        /*float: left;*/
+        width: 200px;
+        
+    }
+
+    li a{
+        display: block;
+        padding: 15px;
+        text-decoration: none;
+        color: white;
+        text-align: center;
+    }
+
+    li a:hover{
+        background-color: #85c1e9;
+    }
+
+    .submenu{
+        display: block;
+        background-color: #21618c; 
+        display: none;
+        position: absolute;
+    }
+
+    .mainmenu li:hover .submenu{
+        display: block;
+    }
+}

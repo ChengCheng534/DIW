@@ -159,7 +159,8 @@ body {
     left: 20%;
     top: 18%;
     scale: 1;
-    visibility: hidden;
+    visibility: hidden; /* El regalo está oculto al principio */
+    transition: transform 1s ease-in-out; /* Transición para el movimiento de caída */
 }
 
 .santa {
@@ -167,18 +168,21 @@ body {
     height: auto;
     top: 30%;
     right: -30%;
+    transition: all 5s ease; /* Animación para el movimiento de Santa */
 }
 
-.santa:hover{
-    transition: all 5s ease;
-    transform: translate(-800px, -150px);
+.santa:hover {
+    transform: translate(-800px, -150px); /* Movimiento de Santa cuando el cursor pasa sobre él */
+    transition-delay: 0s; /* No retraso en el hover de Santa */
 }
 
-.santa:hover ~ .regalo{
-    visibility: visible;
-    
-    transition: all 1s ease-in-out;
-    transform: translate(0px, 295px) rotate(360deg);
+/* El regalo aparece y cae cuando Santa pasa sobre él */
+.santa:hover ~ .regalo {
+    visibility: visible; /* El regalo se vuelve visible */
+    opacity: 1; /* El regalo se hace visible con opacidad */
+    transform: translate(0px, 295px) rotate(360deg); /* El regalo cae y rota */
+    transition: transform 1s ease-in-out; /* Transición de la caída */
+    transition-delay: 1s; /* No hay retraso, el regalo cae cuando Santa pasa */
 }
 
 .casa:hover ~ .copos{

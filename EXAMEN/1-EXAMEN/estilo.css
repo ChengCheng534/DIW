@@ -1,0 +1,169 @@
+/* Definición de variables de color */
+:root {
+    --negro: #000000;
+    --gris-oscuro: #333333;
+    --gris-medio: #666666;
+    --gris-claro: #CCCCCC;
+    --marron-oscuro: #3E2723;
+    --mostaza: #FFC107;
+    --personalizado: #YOUR_COLOR; /* Sustituir con tu color personalizado */
+}
+
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Trebuchet MS", Arial, sans-serif;
+}
+
+body > * {
+    padding: 20px 50px;
+}
+
+/* Header */
+header {
+    background-color: var(--gris-oscuro);
+    color: var(--gris-claro);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+
+h2 {
+    margin-top: 10px;
+}
+
+nav {
+    background-color: var(--mostaza);
+    display: flex;
+    justify-content: space-around;
+    height: 40px;
+}
+
+nav a {
+    flex: 1;
+    text-align: center;
+    font-weight: bold;
+    font-size: 18px;
+    color: var(--gris-oscuro);
+    text-decoration: none;
+    line-height: 40px;
+    margin: 0 10px;
+}
+
+/* Main */
+main {
+    width: 100%;
+    margin-top: 80px;
+}
+
+.presentacion {
+    display: flex;
+    align-items: center;
+}
+
+.presentacion article {
+    padding: 2%;
+    margin-bottom: 1%;
+    border-radius: 10px;
+}
+
+.presentacion article:nth-child(odd) {
+    background-color: var(--gris-claro);
+}
+
+.presentacion article:nth-child(even) {
+    background-color: var(--gris-medio);
+}
+
+.presentacion p {
+    line-height: 1.5;
+    width: 70%;
+    margin-right: 3%;
+}
+
+.presentacion img {
+    width: 30%;
+}
+
+.presentacion .descripcion {
+    padding: 5px 0;
+    color: var(--gris-oscuro);
+    font-size: 12px;
+}
+
+.presentacion ul {
+    margin-left: 2%;
+    list-style: none;
+}
+
+.presentacion ul li {
+    padding-left: 25px;
+    background: url('imgs/ico-list.png') no-repeat left center;
+    background-size: 20px 20px;
+}
+
+/* Sección Bares */
+.bares article {
+    width: 25%;
+    margin: 2%;
+    box-shadow: 5px 10px 8px var(--marron-oscuro);
+}
+
+.bares article figure {
+    background-color: var(--gris-medio);
+}
+
+.bares article img {
+    width: 100%;
+    background-color: var(--gris-medio);
+}
+
+.bares article .descripcion {
+    margin-bottom: 5px;
+    padding: 5px 15px 5px 15px;
+}
+
+.bares article h3 {
+    font-size: 16px;
+    color: var(--mostaza);
+}
+
+.bares article h4 {
+    font-size: 14px;
+    font-style: italic;
+    color: var(--negro);
+    margin: 5px;
+}
+
+.bares article .info {
+    background-color: var(--gris-oscuro);
+    padding: 10px;
+}
+
+.bares article a {
+    color: var(--gris-claro);
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.bares article a:visited {
+    color: var(--negro);
+}
+
+/* Footer */
+footer {
+    background-color: var(--gris-oscuro);
+    color: var(--mostaza);
+    font-weight: bold;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px 0;
+}
+
+footer img {
+    width: 18%;
+}
