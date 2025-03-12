@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Examen Boostraps</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+            <a class="col-3 col-lg-2 navbar-brand text-black" href="index.html">Hotel Tandoori</a>
+            <img src="media/logo.png" alt="" class="col-1 col-lg-1">
+            <button class="navbar-toggler bg-light border" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="col-4 navbar-nav me-auto">
+                    <li class="col-3 col-md-5 col-lg-4 nav-item"><a class="nav-link text-black" href="#">Home</a></li>
+                    <li class="col-4 col-md-6 col-lg-5 nav-item"><a class="nav-link text-black" href="#">Habitaciones</a></li>
+                    <li class="col-2 col-md-4 col-lg-3 nav-item"><a class="nav-link text-black" href="#">FAQ</a></li>
+                    <li class="col-3 col-md-5 col-lg-4 nav-item"><a class="nav-link text-black" href="#">Contacto</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container mt-5">
+        <div class="row">
+            <h1 class="text-center display-4 text-secondary-emphasis">Servicios ofertados</h1>
+            <div class="row col-12 mt-4">
+                <div class="col-6 col-md-4 col-lg-3 card-img1 rounded order-4 order-lg-1">
+                    <img src="media/parking.jpg" alt="" class="card-img-top rounded">
+                    <div class="border rounded">
+                        <h3 class="offset-1 text-secondary">Parking</h3>
+                        <p class="offset-1">
+                            Disfruta de la comodidad y tranquilidad de nuestro servicio de parking exclusivo para
+                            huéspedes. Con un acceso fácil y seguro, tu vehículo estará protegido durante toda tu
+                            estadía.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-6 col-md-4 col-lg-3 card-img1 rounded order-3 order-lg-2">
+                    <img src="media/gym.jpg" alt="" class="card-img-top rounded">
+                    <div class="border rounded">
+                        <h3 class="offset-1 text-secondary">Gimnasio</h3>
+                        <p class="offset-1">
+                            No dejes de lado tu rutina de ejercicio durante tu estadía. Nuestro gimnasio, equipado con
+                            tecnología de última generación, está diseñado para ofrecerte un espacio cómodo y
+                            funcional donde puedas entrenar a tu ritmo
+                        </p>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3 card-img1 rounded mt-3 mt-md-0 order-2 order-lg-3">
+                    <img src="media/restaurante.jpg" alt="" class="card-img-top rounded">
+                    <div class="border rounded">
+                        <h3 class="offset-1 text-secondary">Restaurante</h3>
+                        <p class="offset-1">
+                            Descubre los sabores que deleitan el paladar en nuestro exclusivo restaurante, donde la
+                            pasión por la gastronomía se une con ingredientes frescos y de la más alta calidad. Nuestro
+                            chef ha diseñado un menú que combina lo mejor de la cocina local e internacional, creando
+                            platos exquisitos que conquistan todos los sentidos.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3 card-img1 rounded mt-3 mt-md-0 order-1 order-lg-4">
+                    <img src="media/spa.jpg" alt="" class="card-img-top rounded">
+                    <div class="border rounded">
+                        <h3 class="offset-1 text-secondary">Spa</h3>
+                        <p class="offset-1">
+                            Sumérgete en una experiencia de bienestar en nuestro exclusivo spa, diseñado para
+                            brindarte armonía, relajación y revitalización. Disfruta de una variedad de tratamientos,
+                            desde masajes terapéuticos y faciales rejuvenecedores hasta circuitos de hidroterapia y
+                            rituales de bienestar
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row col-12 mt-4">
+                <div class="row">
+                    <div class="container mt-3 d-none d-md-block col-lg-9 order-lg-2">
+                        <h1 class="display-4 secondary-emphasis">Nuestras instalaciones</h1>
+                        <div id="carouselExampleControls" class="carousel slide d-md-none d-lg-block" data-bs-ride="carousel">
+                            <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="./media/img1.jpg" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="./media/img2.jpg" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="./media/img3.jpg" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="./media/img5.jpg" class="d-block w-100" alt="...">
+                            </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
+                    </div>
+    
+                    <div class="row col-12 col-lg-3 mt-4 mt-md-1">
+                        <div class="border rounded offset-0 bg-light order-md-2 order-lg-1">
+                            <h3 class="text-dark">Sobre nosotros...</h3>
+                            <hr>
+                            <p>
+                                En Hotel Tandoori, nos dedicamos a brindarte una experiencia única, donde el lujo, la
+                                comodidad y el excelente servicio se combinan para hacer de tu estadía un recuerdo
+                                inolvidable. Ubicado en "el corazón de la ciudad", nuestro hotel es el destino ideal tanto
+                                para viajeros de placer como de negocios.
+                            </p>
+                            <p>
+                                Nuestras habitaciones están diseñadas para garantizar el máximo confort con una
+                                decoración elegante y moderna que invita al descanso y la tranquilidad, cada espacio está
+                                equipado con todas las comodidades necesarias para que tu estancia sea placentera y libre
+                                de preocupaciones.
+                            </p>
+                        </div>
+                    </div> 
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="bg-black text-white text-center py-4 mt-3">
+        © 2025 HotelTandoori.com - Todos los derechos reservados
+    </footer>
+</body>
+</html>
